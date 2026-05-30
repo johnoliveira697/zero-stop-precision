@@ -2,12 +2,14 @@ import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
+import { getSortedArticlesData } from "@/lib/markdown";
 import { 
   Crosshair, TrendingUp, Binoculars, ShieldHalf, 
   Dumbbell, Helicopter, Flame, Wrench, ArrowRight, Mail
 } from "lucide-react";
 
-export default function Home() {
+export default async function Home() {
+  const latestArticles = getSortedArticlesData().slice(0, 6);
   return (
     <>
       <Navbar />
@@ -102,71 +104,31 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-              {/* Fake Article 1 */}
-              <article className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden transition-all hover:border-steel hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:-translate-y-2 group">
-                <div className="h-[240px] relative bg-[url('https://images.unsplash.com/photo-1595590424283-b8f1784cb2c8?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center">
-                  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-graphite to-transparent" />
-                  <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white">
-                    BALÍSTICA
+              {latestArticles.map(article => (
+                <article key={article.slug} className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden transition-all hover:border-steel hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:-translate-y-2 group flex flex-col">
+                  <div 
+                    className="h-[240px] relative bg-cover bg-center shrink-0"
+                    style={{ backgroundImage: `url('${article.coverImage || "/assets/hero.png"}')` }}
+                  >
+                    <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-graphite to-transparent" />
+                    <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white">
+                      {article.category}
+                    </div>
                   </div>
-                </div>
-                <div className="p-8">
-                  <span className="font-tech text-sm text-steel block mb-4">16 Mai 2026</span>
-                  <h3 className="font-heading text-3xl text-pure-white mb-4 transition-colors group-hover:text-dark-red">
-                    Balística de Longo Alcance: Calculando o Imprevisível
-                  </h3>
-                  <p className="text-light-steel mb-8 line-clamp-3">
-                    Aprenda a ler as variáveis atmosféricas e a ajustar seu equipamento para tiros consistentes além dos 1000 metros.
-                  </p>
-                  <Link href="/artigos/balistica-longo-alcance" className="font-subheading font-medium uppercase tracking-widest text-pure-white flex items-center gap-2 group/btn">
-                    Ler Artigo <ArrowRight size={16} className="transition-transform group-hover/btn:translate-x-2 group-hover/btn:text-dark-red" />
-                  </Link>
-                </div>
-              </article>
-
-              {/* Fake Article 2 */}
-              <article className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden transition-all hover:border-steel hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:-translate-y-2 group">
-                <div className="h-[240px] relative bg-[url('https://images.unsplash.com/photo-1543818671-5582c0b62e49?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center">
-                  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-graphite to-transparent" />
-                  <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white">
-                    EQUIPAMENTOS
+                  <div className="p-8 flex flex-col flex-1">
+                    <span className="font-tech text-sm text-steel block mb-4">{article.date}</span>
+                    <h3 className="font-heading text-3xl text-pure-white mb-4 transition-colors group-hover:text-dark-red">
+                      {article.title}
+                    </h3>
+                    <p className="text-light-steel mb-8 line-clamp-3 flex-1">
+                      {article.excerpt}
+                    </p>
+                    <Link href={`/artigos/${article.slug}`} className="font-subheading font-medium uppercase tracking-widest text-pure-white flex items-center gap-2 group/btn mt-auto">
+                      Ler Artigo <ArrowRight size={16} className="transition-transform group-hover/btn:translate-x-2 group-hover/btn:text-dark-red" />
+                    </Link>
                   </div>
-                </div>
-                <div className="p-8">
-                  <span className="font-tech text-sm text-steel block mb-4">12 Mai 2026</span>
-                  <h3 className="font-heading text-3xl text-pure-white mb-4 transition-colors group-hover:text-dark-red">
-                    O Ajuste Perfeito: Calibração de Lunetas Premium
-                  </h3>
-                  <p className="text-light-steel mb-8 line-clamp-3">
-                    Um guia definitivo sobre tracking, paralaxe, zero stop e como garantir que seu sistema óptico responda de forma cirúrgica.
-                  </p>
-                  <Link href="/artigos/calibracao-lunetas" className="font-subheading font-medium uppercase tracking-widest text-pure-white flex items-center gap-2 group/btn">
-                    Ler Artigo <ArrowRight size={16} className="transition-transform group-hover/btn:translate-x-2 group-hover/btn:text-dark-red" />
-                  </Link>
-                </div>
-              </article>
-
-              {/* Fake Article 3 */}
-              <article className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden transition-all hover:border-steel hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:-translate-y-2 group">
-                <div className="h-[240px] relative bg-[url('https://images.unsplash.com/photo-1599839619722-39751411ea63?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center">
-                  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-graphite to-transparent" />
-                  <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white">
-                    MINDSET
-                  </div>
-                </div>
-                <div className="p-8">
-                  <span className="font-tech text-sm text-steel block mb-4">08 Mai 2026</span>
-                  <h3 className="font-heading text-3xl text-pure-white mb-4 transition-colors group-hover:text-dark-red">
-                    Sniper Mindset: Sillentium Ante Chaos
-                  </h3>
-                  <p className="text-light-steel mb-8 line-clamp-3">
-                    O isolamento, o silêncio e o controle respiratório antes do disparo perfeito. Preparação mental para atiradores de elite.
-                  </p>
-                  <Link href="/artigos/sniper-mindset" className="font-subheading font-medium uppercase tracking-widest text-pure-white flex items-center gap-2 group/btn">
-                    Ler Artigo <ArrowRight size={16} className="transition-transform group-hover/btn:translate-x-2 group-hover/btn:text-dark-red" />
-                  </Link>
-                </div>
-              </article>
+                </article>
+              ))}
             </div>
           </Container>
         </section>
