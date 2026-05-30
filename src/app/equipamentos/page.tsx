@@ -1,38 +1,19 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
-import { ExternalLink, Target, Crosshair, Map } from "lucide-react";
+import { ExternalLink, Target, Crosshair, Map, ShieldHalf, Wrench } from "lucide-react";
+import { getEquipamentosData } from "@/lib/equipamentos";
 
-export default function EquipamentosPage() {
-  const products = [
-    {
-      id: 1,
-      name: "Luneta Vortex Strike Eagle 5-25x56",
-      category: "Óptica",
-      description: "Desempenho de longo alcance em um pacote durável. O tubo de 34mm acomoda uma enorme quantidade de elevação e deriva.",
-      image: "https://images.unsplash.com/photo-1543818671-5582c0b62e49?q=80&w=1000&auto=format&fit=crop",
-      icon: Crosshair,
-      link: "#",
-    },
-    {
-      id: 2,
-      name: "Bipé Harris HBRS 6-9\"",
-      category: "Apoio",
-      description: "O padrão da indústria para atiradores de precisão. Pernas retráteis com mola e base giratória (Swivel) para ajuste de cant.",
-      image: "https://images.unsplash.com/photo-1595590424283-b8f1784cb2c8?q=80&w=1000&auto=format&fit=crop",
-      icon: Target,
-      link: "#",
-    },
-    {
-      id: 3,
-      name: "Kestrel 5700 Elite com Applied Ballistics",
-      category: "Eletrônicos",
-      description: "Estação meteorológica completa com o motor balístico mais confiável do mundo integrado para soluções de tiro extremas.",
-      image: "https://images.unsplash.com/photo-1599839619722-39751411ea63?q=80&w=1000&auto=format&fit=crop",
-      icon: Map,
-      link: "#",
-    }
-  ];
+const iconMap: Record<string, any> = {
+  Target,
+  Crosshair,
+  Map,
+  ShieldHalf,
+  Wrench
+};
+
+export default async function EquipamentosPage() {
+  const products = getEquipamentosData();
 
   return (
     <>
@@ -50,15 +31,17 @@ export default function EquipamentosPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {products.map((product) => (
+            {products.map((product) => {
+              const Icon = iconMap[product.icon] || Crosshair;
+              return (
               <div key={product.id} className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden flex flex-col h-full group">
                 <div 
                   className="h-[260px] relative bg-cover bg-center shrink-0"
-                  style={{ backgroundImage: `url('${product.image}')` }}
+                  style={{ backgroundImage: `url('${product.image || "/assets/hero.png"}')` }}
                 >
                   <div className="absolute inset-0 bg-matte/40 group-hover:bg-transparent transition-all duration-500" />
                   <div className="absolute top-4 left-4 bg-dark-red text-pure-white p-2 rounded-sm shadow-[0_0_10px_rgba(122,21,21,0.5)]">
-                    <product.icon size={20} />
+                    <Icon size={20} />
                   </div>
                   <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white uppercase">
                     {product.category}
@@ -83,7 +66,8 @@ export default function EquipamentosPage() {
                   </a>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </Container>
       </main>

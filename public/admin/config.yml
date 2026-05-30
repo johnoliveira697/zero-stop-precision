@@ -21,3 +21,16 @@ collections:
       - { label: "Resumo (Excerpt)", name: "excerpt", widget: "text" }
       - { label: "Imagem de Capa", name: "coverImage", widget: "image", required: false }
       - { label: "Corpo do Texto", name: "body", widget: "markdown" }
+
+  - name: "equipamentos"
+    label: "Equipamentos"
+    folder: "content/equipamentos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nome do Produto", name: "name", widget: "string" }
+      - { label: "Categoria", name: "category", widget: "string" }
+      - { label: "Breve Descrição", name: "description", widget: "text" }
+      - { label: "Imagem do Produto", name: "image", widget: "image" }
+      - { label: "Ícone (Crosshair, Target, Map, ShieldHalf, Wrench)", name: "icon", widget: "string", default: "Crosshair" }
+      - { label: "Link de Compra / Afiliado", name: "link", widget: "string" }
