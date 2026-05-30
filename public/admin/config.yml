@@ -1,7 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: johnoliveira697/zero-stop-precision
   branch: main
-local_backend: true
+  base_url: http://localhost:3000
+  auth_endpoint: api/auth
 
 media_folder: "public/assets"
 public_folder: "/assets"
