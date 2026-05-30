@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --black-matte: #0a0a0a;
+  --lead-gray: #141414;
+  --dark-graphite: #1f1f1f;
+  --brushed-steel: #5e6268;
+  --light-steel: #8a8f96;
+  --cool-white: #e6edf5;
+  --pure-white: #ffffff;
+  --dark-red: #7a1515;
+  --glow-red: rgba(122, 21, 21, 0.4);
+}
+
+@theme inline {
+  --color-matte: var(--black-matte);
+  --color-lead: var(--lead-gray);
+  --color-graphite: var(--dark-graphite);
+  --color-steel: var(--brushed-steel);
+  --color-light-steel: var(--light-steel);
+  --color-cool-white: var(--cool-white);
+  --color-pure-white: var(--pure-white);
+  --color-dark-red: var(--dark-red);
+  
+  --font-heading: var(--font-bebas-neue);
+  --font-subheading: var(--font-oswald);
+  --font-body: var(--font-rajdhani);
+  --font-tech: var(--font-orbitron);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--black-matte);
+  color: var(--cool-white);
+}
+
+body {
+  font-family: var(--font-body), sans-serif;
+  background-image: 
+      linear-gradient(rgba(20, 20, 20, 0.9), rgba(10, 10, 10, 0.9)),
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  background-attachment: fixed;
+}
+
+::selection {
+    background-color: var(--dark-red);
+    color: var(--pure-white);
+}
+
+.glitch {
+    position: relative;
+}
+.glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--brushed-steel);
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+.glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 var(--dark-red);
+    clip: rect(85px, 550px, 140px, 0);
+    animation: glitch-anim 2.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% { clip: rect(10px, 9999px, 86px, 0); }
+    20% { clip: rect(61px, 9999px, 59px, 0); }
+    40% { clip: rect(12px, 9999px, 48px, 0); }
+    60% { clip: rect(74px, 9999px, 14px, 0); }
+    80% { clip: rect(4px, 9999px, 93px, 0); }
+    100% { clip: rect(21px, 9999px, 42px, 0); }
+}
+@keyframes glitch-anim-2 {
+    0% { clip: rect(65px, 9999px, 100px, 0); }
+    20% { clip: rect(3px, 9999px, 13px, 0); }
+    40% { clip: rect(48px, 9999px, 72px, 0); }
+    60% { clip: rect(11px, 9999px, 88px, 0); }
+    80% { clip: rect(59px, 9999px, 2px, 0); }
+    100% { clip: rect(81px, 9999px, 56px, 0); }
+}
+
+@keyframes scroll {
+    0% { top: 6px; opacity: 1; }
+    100% { top: 20px; opacity: 0; }
+}
