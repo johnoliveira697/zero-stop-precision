@@ -1,8 +1,11 @@
 ---
-name: "Bipé Harris HBRS 6-9\""
-category: "Apoio"
-description: "O padrão da indústria para atiradores de precisão. Pernas retráteis com mola e base giratória (Swivel) para ajuste de cant."
-image: "https://images.unsplash.com/photo-1595590424283-b8f1784cb2c8?q=80&w=1000&auto=format&fit=crop"
-icon: "Target"
-link: "https://www.amazon.com.br/s?k=bipe+harris"
+name: UTG Bipé Goliath™, 15.2 cm - 20.3 cm, Picatinny
+category: Apoio
+description: O bipé UTG® GOLIATH™ foi projetado para oferecer estabilidade e
+  precisão em tiros de longo alcance, graças à sua ampla abertura de 60° e
+  ajuste independente de tensão para inclinação de até 40° e rotação horizontal
+  de até 28°.
+image: /assets/bipiede-goliath-8203cm-12305cm-picatinny-utg.jpg
+icon: Target
+link: https://amzn.to/4wYrutr
 ---
