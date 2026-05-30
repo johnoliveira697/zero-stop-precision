@@ -42,13 +42,18 @@ export async function GET(request: Request) {
       <body>
         <p>Autenticação com sucesso! Conectando ao painel...</p>
         <script>
-          if (window.opener) {
-            window.opener.postMessage(
-              'authorization:github:success:{"token":"${token}", "provider":"github"}',
-              '*'
-            );
-          }
-          window.close();
+          (function() {
+            function receiveMessage(e) {
+              if (e.data === "authorizing:github") {
+                window.opener.postMessage(
+                  'authorization:github:success:{"token":"${token}","provider":"github"}',
+                  e.origin
+                );
+              }
+            }
+            window.addEventListener("message", receiveMessage, false);
+            window.opener.postMessage("authorizing:github", "*");
+          })();
         </script>
       </body>
       </html>

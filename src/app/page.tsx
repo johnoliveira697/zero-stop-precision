@@ -229,6 +229,7 @@ export default function Home() {
                     type="email" 
                     placeholder="Seu e-mail criptografado" 
                     required
+                    suppressHydrationWarning
                     className="w-full bg-graphite border border-white/10 py-4 pr-6 pl-14 text-pure-white outline-none focus:border-steel focus:shadow-[0_0_10px_rgba(255,255,255,0.05)] transition-all"
                   />
                 </div>
