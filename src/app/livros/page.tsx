@@ -29,7 +29,7 @@ export default async function LivrosPage() {
               <div key={livro.id} className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden flex flex-col h-full group">
                 <a href={livro.link} target="_blank" rel="noopener noreferrer" className="block relative cursor-pointer group/image">
                   <div 
-                    className="h-[360px] relative bg-cover bg-top shrink-0 transition-transform duration-500 group-hover/image:scale-105"
+                    className="h-[360px] relative bg-contain bg-no-repeat bg-center shrink-0 transition-transform duration-500 group-hover/image:scale-105 bg-[#1a1a1a]"
                     style={{ backgroundImage: `url('${livro.image || "/assets/hero.png"}')` }}
                   >
                     <div className="absolute inset-0 bg-matte/40 group-hover/image:bg-transparent transition-all duration-500" />
@@ -49,9 +49,11 @@ export default async function LivrosPage() {
                   <span className="font-tech text-sm text-steel block mb-4">
                     POR {livro.author ? livro.author.toUpperCase() : "JOHN OLIVEIRA"}
                   </span>
-                  <p className="text-light-steel text-sm mb-8 flex-grow">
-                    {livro.description}
-                  </p>
+                  <div className="h-[120px] overflow-y-auto pr-2 mb-8 custom-scrollbar">
+                    <p className="text-light-steel text-sm">
+                      {livro.description}
+                    </p>
+                  </div>
                   
                   <a 
                     href={livro.link}
