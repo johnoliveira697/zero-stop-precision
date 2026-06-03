@@ -43,7 +43,7 @@ export default function ContatoPage() {
                   </div>
                   <div>
                     <h3 className="font-tech text-lg text-pure-white tracking-wider mb-1">CANAL SEGURO (E-MAIL)</h3>
-                    <p className="text-light-steel">contato@zerostopprecision.com</p>
+                    <p className="text-light-steel">contato@0stopprecision.com</p>
                   </div>
                 </div>
 

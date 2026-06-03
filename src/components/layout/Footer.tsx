@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Send } from "lucide-react";
-import { FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -50,22 +50,13 @@ export default function Footer() {
             </h4>
             <div className="flex gap-4">
               <a
-                href="#"
-                className="w-10 h-10 flex items-center justify-center bg-graphite border border-white/20 text-light-steel rounded-sm hover:bg-steel hover:text-pure-white hover:border-pure-white transition-all hover:-translate-y-1"
+                href="https://wa.me/5521989666080"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center bg-graphite border border-white/20 text-light-steel rounded-sm hover:bg-[#25D366] hover:text-pure-white hover:border-[#25D366] transition-all hover:-translate-y-1"
+                title="WhatsApp"
               >
-                <FaInstagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 flex items-center justify-center bg-graphite border border-white/20 text-light-steel rounded-sm hover:bg-steel hover:text-pure-white hover:border-pure-white transition-all hover:-translate-y-1"
-              >
-                <FaYoutube size={20} />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 flex items-center justify-center bg-graphite border border-white/20 text-light-steel rounded-sm hover:bg-steel hover:text-pure-white hover:border-pure-white transition-all hover:-translate-y-1"
-              >
-                <FaTwitter size={20} />
+                <FaWhatsapp size={20} />
               </a>
               <a
                 href="#"
