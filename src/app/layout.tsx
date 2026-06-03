@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Bebas_Neue, Oswald, Rajdhani, Orbitron } from "next/font/google";
 import "./globals.css";
 
@@ -27,6 +28,9 @@ const orbitron = Orbitron({
 export const metadata: Metadata = {
   title: "Zero Stop Precision | Fator Precisão",
   description: "Plataforma referência sobre tiro de precisão, balística e equipamentos táticos.",
+  other: {
+    "google-adsense-account": "ca-pub-7362774556356661",
+  },
 };
 
 export default function RootLayout({
@@ -41,6 +45,12 @@ export default function RootLayout({
     >
       <body className="font-body min-h-screen text-cool-white overflow-x-hidden relative bg-matte">
         {children}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7362774556356661"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
