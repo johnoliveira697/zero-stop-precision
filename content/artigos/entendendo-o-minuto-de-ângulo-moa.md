@@ -7,6 +7,7 @@ excerpt: Se você deseja melhorar sua precisão no tiro, seja ele com fuzil de
   entender como fazer os ajustes corretos na sua luneta é uma habilidade
   fundamental. Este artigo vai desmistificar o conceito de Minuto de Ângulo
   (MOA) de uma forma detalhada e fácil de compreender.
+coverImage: /assets/article_dope.png
 ---
 ## O que é um Minuto de Ângulo (MOA)?
 
