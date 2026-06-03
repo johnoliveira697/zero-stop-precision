@@ -29,6 +29,11 @@ export function getSortedArticlesData(): ArticleData[] {
 
     const matterResult = matter(fileContents);
 
+    // Ensure date is always a string, even if parsed as a Date object
+    if (matterResult.data.date instanceof Date) {
+      matterResult.data.date = matterResult.data.date.toISOString().split('T')[0];
+    }
+
     return {
       slug,
       ...(matterResult.data as Omit<ArticleData, "slug">),
@@ -65,6 +70,11 @@ export async function getArticleData(slug: string): Promise<ArticleData> {
   const fileContents = fs.readFileSync(fullPath, "utf8");
 
   const matterResult = matter(fileContents);
+
+  // Ensure date is always a string, even if parsed as a Date object
+  if (matterResult.data.date instanceof Date) {
+    matterResult.data.date = matterResult.data.date.toISOString().split('T')[0];
+  }
 
   const processedContent = await remark()
     .use(html, { sanitize: false })
