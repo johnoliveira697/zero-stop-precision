@@ -1,5 +1,5 @@
 ---
-title: O que todo atirador precisa saber sobre balística - Capa comum
+title: O que todo atirador precisa saber sobre balística
 author: " Eng. Tiago José Ávila"
 category: Balística
 description: Este leve e dinâmico livro traz ricos e permanentes conhecimentos
