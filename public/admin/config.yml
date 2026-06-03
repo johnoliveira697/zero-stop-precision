@@ -22,15 +22,15 @@ collections:
       - { label: "Imagem de Capa", name: "coverImage", widget: "image", required: false }
       - { label: "Corpo do Texto", name: "body", widget: "markdown" }
 
-  - name: "equipamentos"
-    label: "Equipamentos"
-    folder: "content/equipamentos"
+  - name: "livros"
+    label: "Livros"
+    folder: "content/livros"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Nome do Produto", name: "name", widget: "string" }
+      - { label: "Título do Livro", name: "title", widget: "string" }
+      - { label: "Autor", name: "author", widget: "string", default: "John Oliveira" }
       - { label: "Categoria", name: "category", widget: "string" }
       - { label: "Breve Descrição", name: "description", widget: "text" }
-      - { label: "Imagem do Produto", name: "image", widget: "image" }
-      - { label: "Ícone (Crosshair, Target, Map, ShieldHalf, Wrench)", name: "icon", widget: "string", default: "Crosshair" }
+      - { label: "Imagem da Capa", name: "image", widget: "image" }
       - { label: "Link de Compra / Afiliado", name: "link", widget: "string" }

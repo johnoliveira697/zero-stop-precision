@@ -32,8 +32,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/equipamentos" className="text-light-steel hover:text-pure-white transition-colors">
-                  Equipamentos
+                <Link href="/livros" className="text-light-steel hover:text-pure-white transition-colors">
+                  Biblioteca
                 </Link>
               </li>
               <li>
