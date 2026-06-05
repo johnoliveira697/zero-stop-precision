@@ -2,6 +2,7 @@ import { getArticleData, getAllArticleSlugs } from "@/lib/markdown";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
+import ShareButton from "@/components/ui/ShareButton";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
@@ -28,20 +29,23 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </Link>
 
           <header className="mb-12">
-            <div className="flex items-center gap-4 mb-6">
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-pure-white mb-6 leading-tight">
+              {articleData.title}
+            </h1>
+            <p className="text-xl text-light-steel border-l-2 border-dark-red pl-4 font-subheading mb-8">
+              {articleData.excerpt}
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
               <span className="bg-graphite border border-steel px-3 py-1 font-tech text-xs tracking-widest text-cool-white">
                 {articleData.category}
               </span>
               <span className="font-tech text-sm text-steel">
                 {articleData.date}
               </span>
+              <div className="ml-auto">
+                <ShareButton title={articleData.title} />
+              </div>
             </div>
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl text-pure-white mb-6 leading-tight">
-              {articleData.title}
-            </h1>
-            <p className="text-xl text-light-steel border-l-2 border-dark-red pl-4 font-subheading">
-              {articleData.excerpt}
-            </p>
           </header>
 
           {articleData.coverImage && (
@@ -53,9 +57,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
           {/* Render Markdown Content */}
           <div 
-            className="prose prose-invert prose-lg max-w-none
+            className="prose prose-invert prose-lg max-w-none text-[20px]
               prose-headings:font-heading prose-headings:text-pure-white
-              prose-p:text-cool-white prose-p:leading-relaxed
+              prose-p:text-cool-white prose-p:leading-relaxed prose-p:text-justify
               prose-a:text-steel prose-a:underline hover:prose-a:text-pure-white
               prose-strong:text-pure-white
               prose-blockquote:border-l-dark-red prose-blockquote:bg-graphite/50 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:text-light-steel prose-blockquote:not-italic

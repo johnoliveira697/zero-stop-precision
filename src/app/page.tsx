@@ -24,12 +24,12 @@ export default async function Home() {
           <Container className="relative z-10 w-full mt-20">
             <div className="max-w-[900px]">
               <h1 
-                className="font-heading text-5xl md:text-[6rem] text-pure-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)] mb-4 glitch" 
+                className="font-heading text-4xl md:text-[6rem] md:leading-none text-pure-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)] mb-4 glitch" 
                 data-text="FATOR PRECISÃO"
               >
                 FATOR PRECISÃO
               </h1>
-              <p className="font-subheading text-xl md:text-2xl text-light-steel mb-12 border-l-2 border-dark-red pl-4 max-w-[600px] tracking-wide">
+              <p className="font-subheading text-lg md:text-2xl text-light-steel mb-12 border-l-2 border-dark-red pl-4 max-w-[600px] tracking-wide">
                 Precisão não é sorte. É cálculo, disciplina e controle.
               </p>
               <div className="flex flex-col sm:flex-row gap-6">
@@ -82,7 +82,7 @@ export default async function Home() {
               ].map((category) => (
                 <div 
                   key={category.name}
-                  className="bg-lead border border-graphite p-10 text-center relative overflow-hidden group cursor-pointer hover:bg-graphite hover:border-steel hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-300"
+                  className="bg-lead border border-graphite p-6 md:p-10 text-center relative overflow-hidden group cursor-pointer hover:bg-graphite hover:border-steel hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-300"
                 >
                   <div className="absolute top-0 left-0 w-[2px] h-0 bg-dark-red transition-all duration-300 group-hover:h-full" />
                   <category.icon size={48} className="text-steel mx-auto mb-6 transition-all duration-300 group-hover:text-pure-white group-hover:scale-110" />
@@ -138,7 +138,7 @@ export default async function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/95 via-[#0a0a0a]/80 to-transparent" />
           <Container className="relative z-10">
             <div className="max-w-[600px]">
-              <h2 className="font-heading text-5xl md:text-6xl text-pure-white mb-2">
+              <h2 className="font-heading text-4xl md:text-6xl text-pure-white mb-2">
                 O CÓDIGO DA <span className="text-steel">PRECISÃO</span>
               </h2>
               <div className="w-[60px] h-[3px] bg-dark-red mt-4 shadow-[0_0_10px_rgba(122,21,21,0.4)]" />
@@ -172,11 +172,11 @@ export default async function Home() {
         {/* Newsletter Section */}
         <section className="bg-lead border-y border-graphite py-16">
           <Container>
-            <div className="bg-matte border border-white/10 p-8 md:p-16 flex flex-col md:flex-row items-center gap-10 md:gap-16 relative overflow-hidden">
+            <div className="bg-matte border border-white/10 p-6 md:p-16 flex flex-col md:flex-row items-center gap-10 md:gap-16 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-[200px] h-full bg-gradient-to-r from-transparent to-white/5 -skew-x-12" />
               
               <div className="flex-1 relative z-10 text-center md:text-left">
-                <h2 className="font-heading text-4xl md:text-5xl text-pure-white mb-4">
+                <h2 className="font-heading text-3xl md:text-5xl text-pure-white mb-4">
                   RELATÓRIO DE <span className="text-dark-red">SITUAÇÃO</span>
                 </h2>
                 <p className="text-light-steel text-lg">
