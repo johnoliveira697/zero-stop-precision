@@ -116,7 +116,6 @@ export default async function Home() {
                     </div>
                   </div>
                   <div className="p-8 flex flex-col flex-1">
-                    <span className="font-tech text-sm text-steel block mb-4">{article.date}</span>
                     <h3 className="font-heading text-3xl text-pure-white mb-4 transition-colors group-hover:text-dark-red">
                       {article.title}
                     </h3>

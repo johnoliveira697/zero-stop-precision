@@ -39,9 +39,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               <span className="bg-graphite border border-steel px-3 py-1 font-tech text-xs tracking-widest text-cool-white">
                 {articleData.category}
               </span>
-              <span className="font-tech text-sm text-steel">
-                {articleData.date}
-              </span>
               <div className="ml-auto">
                 <ShareButton title={articleData.title} />
               </div>
