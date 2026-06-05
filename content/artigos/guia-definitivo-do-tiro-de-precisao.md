@@ -7,10 +7,6 @@ excerpt: Descubra o que é o tiro de precisão, domine os fundamentos essenciais
   compare os melhores armamentos, do calibre .22 LR ao fuzil .308.
 coverImage: /assets/Tiro de precisão.jpg
 ---
-<h1>O Guia Definitivo do Tiro de Precisão: Fundamentos, Equipamentos e Como Começar do Zero</h1>
-
-<p>Descubra o que é o tiro de precisão, domine os fundamentos essenciais e compare os melhores armamentos, do calibre .22 LR ao fuzil .308. Leia e aprimore-se!</p>
-
 <p>O fascínio pelo <strong>tiro de precisão</strong> costuma começar pela cultura pop, por filmes que retratam atiradores de elite (snipers) em ações impressionantes. No entanto, quando você se deita no chão, ajusta a luneta e tenta acertar um alvo a centenas de metros de distância, percebe rapidamente que a realidade é muito mais complexa e técnica do que a ficção. O tiro de precisão não é apenas sobre puxar um gatilho; é uma disciplina que exige matemática, controle emocional, preparo físico e um profundo conhecimento do seu equipamento.</p>
 
 <p>Muitos atiradores iniciantes sentem-se frustrados ao tentar engajar alvos distantes sem conhecer a teoria por trás da balística, ou pior, investem milhares de reais em armamentos avançados sem dominar a base. O verdadeiro problema é a tentativa e erro às cegas: atirar sem entender por que o projétil atingiu fora do alvo.</p>
@@ -156,4 +152,3 @@ coverImage: /assets/Tiro de precisão.jpg
 <h3>Gostou do conteúdo?</h3>
 
 <p>Se você está pronto para abandonar a tentativa e erro e quer aprender o tiro de precisão na prática com excelência, não perca tempo! <strong>Compartilhe este artigo</strong> nos seus grupos de atiradores no WhatsApp e <strong>inscreva-se no nosso canal</strong> para não perder as próximas aulas teóricas e análises de equipamentos. Quer elevar seu treinamento? <strong>Deixe um comentário abaixo</strong> sobre qual armamento você utiliza ou gostaria de utilizar, e entre em contato para conhecer os nossos cursos presenciais e de pós-graduação voltados para armamento e tiro!</p>
-```
