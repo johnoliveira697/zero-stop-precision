@@ -46,11 +46,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </header>
 
           {articleData.coverImage && (
-            <div className="w-full bg-graphite mb-12 border border-white/10 rounded flex justify-center items-center overflow-hidden py-4">
+            <div className="w-full mb-12 flex justify-center items-center">
               <img 
                 src={articleData.coverImage} 
                 alt={articleData.title}
-                className="w-full max-h-[600px] object-contain"
+                className="max-w-full max-h-[600px] object-contain rounded"
               />
             </div>
           )}
