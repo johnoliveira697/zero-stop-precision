@@ -106,12 +106,14 @@ export default async function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {latestArticles.map(article => (
                 <article key={article.slug} className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden transition-all hover:border-steel hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:-translate-y-2 group flex flex-col">
-                  <div 
-                    className="h-[240px] relative bg-cover bg-center shrink-0"
-                    style={{ backgroundImage: `url('${article.coverImage || "/assets/hero.png"}')` }}
-                  >
+                  <div className="h-[240px] relative shrink-0 overflow-hidden bg-graphite flex justify-center items-center">
+                    <img 
+                      src={article.coverImage || "/assets/hero.png"} 
+                      alt={article.title}
+                      className="w-full h-full object-contain"
+                    />
                     <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-graphite to-transparent" />
-                    <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white">
+                    <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white uppercase">
                       {article.category}
                     </div>
                   </div>
