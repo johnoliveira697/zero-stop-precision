@@ -46,10 +46,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </header>
 
           {articleData.coverImage && (
-            <div 
-              className="w-full h-[400px] mb-12 border border-white/10 bg-cover bg-center rounded"
-              style={{ backgroundImage: `url('${articleData.coverImage}')` }}
-            />
+            <div className="w-full bg-graphite mb-12 border border-white/10 rounded flex justify-center items-center overflow-hidden py-4">
+              <img 
+                src={articleData.coverImage} 
+                alt={articleData.title}
+                className="w-full max-h-[600px] object-contain"
+              />
+            </div>
           )}
 
           {/* Render Markdown Content */}
