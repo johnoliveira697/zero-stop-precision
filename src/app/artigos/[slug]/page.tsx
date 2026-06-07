@@ -59,6 +59,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               prose-p:text-cool-white prose-p:leading-relaxed prose-p:text-justify
               prose-a:text-steel prose-a:underline hover:prose-a:text-pure-white
               prose-strong:text-pure-white
+              prose-img:mx-auto prose-img:rounded
               prose-blockquote:border-l-dark-red prose-blockquote:bg-graphite/50 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:text-light-steel prose-blockquote:not-italic
               prose-ul:text-cool-white prose-li:marker:text-dark-red"
             dangerouslySetInnerHTML={{ __html: articleData.contentHtml || "" }}
