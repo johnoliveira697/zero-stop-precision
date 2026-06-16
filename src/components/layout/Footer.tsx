@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-matte pt-20 pb-8 relative border-t border-white/5">
       <div className="max-w-[1280px] mx-auto px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-16">
           <div className="md:col-span-2">
             <h3 className="font-tech text-3xl text-pure-white tracking-widest mb-4">
               ZERO STOP <span className="text-steel">PRECISION</span>
@@ -39,6 +39,29 @@ export default function Footer() {
               <li>
                 <Link href="/sobre" className="text-light-steel hover:text-pure-white transition-colors">
                   Sobre
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-subheading text-xl uppercase text-pure-white mb-6 tracking-wide">
+              Jurídico
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/politica-de-privacidade" className="text-light-steel hover:text-pure-white transition-colors">
+                  Política de Privacidade
+                </Link>
+              </li>
+              <li>
+                <Link href="/termos-de-uso" className="text-light-steel hover:text-pure-white transition-colors">
+                  Termos de Uso
+                </Link>
+              </li>
+              <li>
+                <Link href="/aviso-legal" className="text-light-steel hover:text-pure-white transition-colors">
+                  Aviso Legal
                 </Link>
               </li>
             </ul>
