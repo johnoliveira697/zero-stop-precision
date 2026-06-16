@@ -5,11 +5,45 @@ import Container from "@/components/layout/Container";
 import ShareButton from "@/components/ui/ShareButton";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
   return getAllArticleSlugs().map((slugObj) => ({
     slug: slugObj.params.slug,
   }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const articleData = await getArticleData(resolvedParams.slug);
+
+  const url = `https://www.0stopprecision.com/artigos/${resolvedParams.slug}`;
+  const title = `${articleData.title} | Zero Stop Precision`;
+  const description = articleData.excerpt || "Leia este artigo completo na Zero Stop Precision.";
+  const image = articleData.coverImage ? `https://www.0stopprecision.com${articleData.coverImage}` : "https://www.0stopprecision.com/assets/hero.png";
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url,
+      images: [
+        {
+          url: image,
+          alt: title,
+        },
+      ],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
+  };
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
