@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Send } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -59,8 +59,18 @@ export default function Footer() {
                 <FaWhatsapp size={20} />
               </a>
               <a
+                href="https://www.instagram.com/zerostopprecision"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center bg-graphite border border-white/20 text-light-steel rounded-sm hover:bg-[#E1306C] hover:text-pure-white hover:border-[#E1306C] transition-all hover:-translate-y-1"
+                title="Instagram"
+              >
+                <FaInstagram size={20} />
+              </a>
+              <a
                 href="#"
                 className="w-10 h-10 flex items-center justify-center bg-graphite border border-white/20 text-light-steel rounded-sm hover:bg-steel hover:text-pure-white hover:border-pure-white transition-all hover:-translate-y-1"
+                title="Telegram / E-mail"
               >
                 <Send size={20} />
               </a>
