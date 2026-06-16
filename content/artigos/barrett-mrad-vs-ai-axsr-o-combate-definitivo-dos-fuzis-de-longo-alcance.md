@@ -5,7 +5,7 @@ category: Armamento
 excerpt: Descubra qual é o melhor fuzil de longo alcance neste comparativo
   detalhado entre o Barrett MRAD e o AI AXSR. Análise técnica, precisão e prós e
   contras.
-coverImage: /assets/imagem1.png
+coverImage: /assets/imagem1.jpg
 ---
 No universo do tiro de precisão de alto nível, os detalhes separam os bons equipamentos das verdadeiras lendas. Quando o assunto é engajar alvos além de uma milha (1.600m) de distância, os atiradores, militares e entusiastas sabem que o equipamento não pode falhar. É nesse cenário de exigência extrema que encontramos dois verdadeiros "monstros" do longo alcance: o Accuracy International AXSR e o Barrett MRAD.
 
