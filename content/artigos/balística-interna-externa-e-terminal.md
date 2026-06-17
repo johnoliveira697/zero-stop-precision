@@ -5,6 +5,7 @@ category: Balística
 excerpt: Se você já se perguntou o que acontece desde o momento em que aperta o
   gatilho até o projétil atingir o alvo e o que acontece depois, este artigo é
   para você.
+coverImage: /assets/balistic.jpg
 ---
 A balística é a ciência que estuda o movimento e o comportamento dos projéteis, e ela se divide em três grandes fases: **interna**, **externa** e **terminal**.
 
@@ -16,9 +17,7 @@ Entender essas três etapas não é só teoria. Para um atirador de precisão, e
 | **Externa**  | Do cano até o alvo             | Trajetória, vento, gravidade, Coriolis         |
 | **Terminal** | Da chegada ao alvo em diante   | Expansão, penetração, transferência de energia |
 
-
-
-![Balística Aplicada ao Tiro de Precisão](/assets/balistic.jpg "Balística Aplicada ao Tiro de Precisão")
+![Balística Aplicada ao Tiro de Precisão](/assets/gemini_generated_image_5m22lt5m22lt5m22.png "Balística Aplicada ao Tiro de Precisão")
 
 ## Balística Interna: O que acontece dentro do cano
 
