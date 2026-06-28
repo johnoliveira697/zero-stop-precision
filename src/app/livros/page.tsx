@@ -4,6 +4,7 @@ import Container from "@/components/layout/Container";
 import { BookOpen } from "lucide-react";
 import { getLivrosData } from "@/lib/livros";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -37,10 +38,14 @@ export default async function LivrosPage() {
               return (
               <div key={livro.id} className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden flex flex-col h-full group">
                 <a href={livro.link} target="_blank" rel="noopener noreferrer" className="block relative cursor-pointer group/image">
-                  <div 
-                    className="h-[360px] relative bg-contain bg-no-repeat bg-center shrink-0 transition-transform duration-500 group-hover/image:scale-105 bg-[#1a1a1a]"
-                    style={{ backgroundImage: `url('${livro.image || "/assets/hero.png"}')` }}
-                  >
+                  <div className="h-[360px] relative overflow-hidden shrink-0 transition-transform duration-500 group-hover/image:scale-105 bg-[#1a1a1a]">
+                    <Image
+                      src={livro.image || "/assets/hero.png"}
+                      alt={livro.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-contain"
+                    />
                     <div className="absolute inset-0 bg-matte/40 group-hover/image:bg-transparent transition-all duration-500" />
                     <div className="absolute top-4 left-4 bg-dark-red text-pure-white p-2 rounded-sm shadow-[0_0_10px_rgba(122,21,21,0.5)]">
                       <BookOpen size={20} />

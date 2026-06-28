@@ -5,6 +5,7 @@ import Container from "@/components/layout/Container";
 import ShareButton from "@/components/ui/ShareButton";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -111,11 +112,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </header>
 
           {articleData.coverImage && (
-            <div className="w-full mb-12 flex justify-center items-center">
-              <img 
-                src={articleData.coverImage} 
+            <div className="relative w-full h-[300px] md:h-[450px] mb-12 rounded overflow-hidden">
+              <Image
+                src={articleData.coverImage}
                 alt={articleData.title}
-                className="max-w-full max-h-[600px] object-contain rounded"
+                fill
+                sizes="(max-width: 800px) 100vw, 800px"
+                className="object-contain"
               />
             </div>
           )}

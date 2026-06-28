@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -36,10 +37,12 @@ export default function ArticlesPage() {
             {articles.map((article) => (
               <article key={article.slug} className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden transition-all hover:border-steel hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:-translate-y-2 group flex flex-col h-full">
                 <div className="h-[240px] relative shrink-0 overflow-hidden bg-graphite flex justify-center items-center">
-                  <img 
-                    src={article.coverImage || "/assets/hero.png"} 
+                  <Image
+                    src={article.coverImage || "/assets/hero.png"}
                     alt={article.title}
-                    className="w-full h-full object-contain"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-contain"
                   />
                   <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-graphite to-transparent" />
                   <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white uppercase">

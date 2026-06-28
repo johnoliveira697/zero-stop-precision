@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
@@ -22,7 +23,15 @@ export default async function Home({
 
       <main>
         {/* Hero Section */}
-        <section className="relative h-screen flex items-center bg-[url('/assets/hero.png')] bg-cover bg-center bg-fixed">
+        <section className="relative h-screen flex items-center overflow-hidden">
+          <Image
+            src="/assets/hero.png"
+            alt="Atirador posicionado para tiro de precisão de longa distância"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center -z-10"
+          />
           {/* Overlay Gradients */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/90 via-[#0a0a0a]/40 to-[#0a0a0a]/80" />
           <div className="absolute bottom-0 left-0 w-full h-[150px] bg-gradient-to-t from-matte to-transparent" />
@@ -113,10 +122,12 @@ export default async function Home({
               {latestArticles.map(article => (
                 <article key={article.slug} className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden transition-all hover:border-steel hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:-translate-y-2 group flex flex-col">
                   <div className="h-[240px] relative shrink-0 overflow-hidden bg-graphite flex justify-center items-center">
-                    <img 
-                      src={article.coverImage || "/assets/hero.png"} 
+                    <Image
+                      src={article.coverImage || "/assets/hero.png"}
                       alt={article.title}
-                      className="w-full h-full object-contain"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-contain"
                     />
                     <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-graphite to-transparent" />
                     <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white uppercase">
@@ -141,7 +152,14 @@ export default async function Home({
         </section>
 
         {/* About Section */}
-        <section className="py-32 relative bg-[url('/assets/about.png')] bg-cover bg-center bg-fixed">
+        <section className="py-32 relative overflow-hidden">
+          <Image
+            src="/assets/about.png"
+            alt="Equipamento e técnica de tiro de precisão tático"
+            fill
+            sizes="100vw"
+            className="object-cover object-center -z-10"
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/95 via-[#0a0a0a]/80 to-transparent" />
           <Container className="relative z-10">
             <div className="max-w-[600px]">
