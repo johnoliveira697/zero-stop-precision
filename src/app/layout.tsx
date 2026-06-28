@@ -26,8 +26,12 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.0stopprecision.com"),
   title: "Zero Stop Precision | Fator Precisão",
   description: "Plataforma referência sobre tiro de precisão, balística e equipamentos táticos.",
+  alternates: {
+    canonical: "/",
+  },
   other: {
     "google-adsense-account": "ca-pub-7362774556356661",
   },

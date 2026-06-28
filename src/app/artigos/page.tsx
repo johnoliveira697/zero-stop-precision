@@ -4,6 +4,15 @@ import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Artigos | Zero Stop Precision",
+  description: "Acervo completo de artigos sobre tiro de precisão, balística, óticas e equipamentos táticos.",
+  alternates: {
+    canonical: "/artigos",
+  },
+};
 
 export default function ArticlesPage() {
   const articles = getSortedArticlesData();

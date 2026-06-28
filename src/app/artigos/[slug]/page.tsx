@@ -50,8 +50,39 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const resolvedParams = await params;
   const articleData = await getArticleData(resolvedParams.slug);
 
+  const url = `https://www.0stopprecision.com/artigos/${resolvedParams.slug}`;
+  const image = articleData.coverImage
+    ? `https://www.0stopprecision.com${articleData.coverImage}`
+    : "https://www.0stopprecision.com/assets/hero.png";
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: articleData.title,
+    description: articleData.excerpt,
+    image: [image],
+    datePublished: articleData.date,
+    dateModified: articleData.date,
+    author: {
+      "@type": "Organization",
+      name: "Zero Stop Precision",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Zero Stop Precision",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
       <main className="bg-matte pt-32 pb-24 min-h-screen">
         <Container className="max-w-[800px]">

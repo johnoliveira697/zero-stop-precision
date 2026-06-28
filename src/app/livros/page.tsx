@@ -4,6 +4,15 @@ import Container from "@/components/layout/Container";
 import { BookOpen } from "lucide-react";
 import { getLivrosData } from "@/lib/livros";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Biblioteca Tática | Zero Stop Precision",
+  description: "Livros e manuais essenciais sobre balística, tiro de precisão e mindset tático, com curadoria da equipe Zero Stop Precision.",
+  alternates: {
+    canonical: "/livros",
+  },
+};
 
 export default async function LivrosPage() {
   const livros = getLivrosData();

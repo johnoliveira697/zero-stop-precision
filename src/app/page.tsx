@@ -3,13 +3,19 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
 import { getSortedArticlesData } from "@/lib/markdown";
-import { 
-  Crosshair, TrendingUp, Binoculars, ShieldHalf, 
-  Dumbbell, Helicopter, Flame, Wrench, ArrowRight, Mail
+import {
+  Crosshair, TrendingUp, Binoculars, ShieldHalf,
+  Dumbbell, Helicopter, Flame, Wrench, ArrowRight, Mail, CheckCircle2
 } from "lucide-react";
 
-export default async function Home() {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
   const latestArticles = getSortedArticlesData().slice(0, 6);
+  const resolvedSearchParams = await searchParams;
+  const inscrito = resolvedSearchParams.inscrito === "true";
   return (
     <>
       <Navbar />
@@ -185,21 +191,36 @@ export default async function Home() {
                 </p>
               </div>
 
-              <form className="flex-1 w-full relative z-10 flex flex-col gap-4">
-                <div className="relative">
-                  <Mail className="absolute left-6 top-1/2 -translate-y-1/2 text-steel" size={20} />
-                  <input 
-                    type="email" 
-                    placeholder="Seu e-mail criptografado" 
-                    required
-                    suppressHydrationWarning
-                    className="w-full bg-graphite border border-white/10 py-4 pr-6 pl-14 text-pure-white outline-none focus:border-steel focus:shadow-[0_0_10px_rgba(255,255,255,0.05)] transition-all"
-                  />
+              {inscrito ? (
+                <div className="flex-1 w-full relative z-10 flex items-center gap-3 bg-dark-red/10 border border-dark-red/40 text-cool-white px-6 py-5 rounded">
+                  <CheckCircle2 size={24} className="text-dark-red shrink-0" />
+                  <p>Inscrição confirmada. Você agora recebe nossos relatórios táticos em primeira mão.</p>
                 </div>
-                <button type="submit" className="font-subheading text-lg font-medium uppercase tracking-widest bg-dark-red text-pure-white py-4 border border-dark-red hover:bg-[#8c1a1a] hover:shadow-[0_0_25px_rgba(122,21,21,0.6)] transition-all">
-                  Entrar na Zona de Precisão
-                </button>
-              </form>
+              ) : (
+                <form action="https://formsubmit.co/contato@0stopprecision.com" method="POST" className="flex-1 w-full relative z-10 flex flex-col gap-4">
+                  {/* Configuração do FormSubmit.co: define assunto do e-mail, template e página de retorno */}
+                  <input type="hidden" name="_subject" value="Nova inscrição na newsletter - Zero Stop Precision" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_next" value="https://www.0stopprecision.com/?inscrito=true" />
+                  {/* Honeypot anti-spam: campo invisível que só bots preenchem */}
+                  <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
+
+                  <div className="relative">
+                    <Mail className="absolute left-6 top-1/2 -translate-y-1/2 text-steel" size={20} />
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Seu e-mail criptografado"
+                      required
+                      suppressHydrationWarning
+                      className="w-full bg-graphite border border-white/10 py-4 pr-6 pl-14 text-pure-white outline-none focus:border-steel focus:shadow-[0_0_10px_rgba(255,255,255,0.05)] transition-all"
+                    />
+                  </div>
+                  <button type="submit" className="font-subheading text-lg font-medium uppercase tracking-widest bg-dark-red text-pure-white py-4 border border-dark-red hover:bg-[#8c1a1a] hover:shadow-[0_0_25px_rgba(122,21,21,0.6)] transition-all">
+                    Entrar na Zona de Precisão
+                  </button>
+                </form>
+              )}
             </div>
           </Container>
         </section>

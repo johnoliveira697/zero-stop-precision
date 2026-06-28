@@ -2,6 +2,15 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
 import { CheckCircle2 } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sobre | Zero Stop Precision",
+  description: "Conheça a origem e a missão da Zero Stop Precision, plataforma de referência em tiro de precisão e balística no Brasil.",
+  alternates: {
+    canonical: "/sobre",
+  },
+};
 
 export default function SobrePage() {
   return (

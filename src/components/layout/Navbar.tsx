@@ -56,16 +56,21 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile Menu Toggle */}
-        <div
+        <button
+          type="button"
           className="md:hidden text-light-steel cursor-pointer"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-menu"
         >
           {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-        </div>
+        </button>
       </div>
 
       {/* Mobile Menu Dropdown */}
       <div
+        id="mobile-menu"
         className={`absolute top-full left-0 w-full bg-matte/95 backdrop-blur-md border-b border-white/10 transition-all duration-300 overflow-hidden flex flex-col items-center gap-6 md:hidden ${
           isMobileMenuOpen ? "py-8 opacity-100 max-h-[400px]" : "max-h-0 opacity-0"
         }`}

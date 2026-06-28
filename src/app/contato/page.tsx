@@ -1,9 +1,25 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, CheckCircle2 } from "lucide-react";
+import type { Metadata } from "next";
 
-export default function ContatoPage() {
+export const metadata: Metadata = {
+  title: "Contato | Zero Stop Precision",
+  description: "Entre em contato com a equipe Zero Stop Precision para dúvidas, parcerias ou sugestões de conteúdo sobre tiro de precisão e balística.",
+  alternates: {
+    canonical: "/contato",
+  },
+};
+
+export default async function ContatoPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const resolvedSearchParams = await searchParams;
+  const enviado = resolvedSearchParams.enviado === "true";
+
   return (
     <>
       <Navbar />
@@ -65,24 +81,37 @@ export default function ContatoPage() {
                 Formulário de Contato
               </h2>
               
-              {/* Note: Replace action URL with a real Formspree endpoint or similar service to receive real emails. */}
-              <form action="https://formspree.io/f/your-form-id-here" method="POST" className="space-y-6">
+              {enviado && (
+                <div className="mb-6 flex items-start gap-3 bg-dark-red/10 border border-dark-red/40 text-cool-white px-4 py-3 rounded">
+                  <CheckCircle2 size={20} className="text-dark-red shrink-0 mt-0.5" />
+                  <p className="text-sm">Mensagem transmitida com sucesso. Nossa equipe responderá em breve no e-mail informado.</p>
+                </div>
+              )}
+
+              <form action="https://formsubmit.co/contato@0stopprecision.com" method="POST" className="space-y-6">
+                {/* Configuração do FormSubmit.co: define assunto do e-mail, template e página de retorno */}
+                <input type="hidden" name="_subject" value="Novo contato via site - Zero Stop Precision" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_next" value="https://www.0stopprecision.com/contato?enviado=true" />
+                {/* Honeypot anti-spam: campo invisível que só bots preenchem */}
+                <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
+
                 <div>
                   <label htmlFor="name" className="block font-tech text-sm text-steel tracking-wider mb-2">IDENTIFICAÇÃO (NOME)</label>
-                  <input 
-                    type="text" 
-                    id="name" 
+                  <input
+                    type="text"
+                    id="name"
                     name="name"
                     required
                     className="w-full bg-matte border border-white/10 py-3 px-4 text-pure-white outline-none focus:border-dark-red focus:shadow-[0_0_10px_rgba(122,21,21,0.2)] transition-all"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block font-tech text-sm text-steel tracking-wider mb-2">E-MAIL PARA RETORNO</label>
-                  <input 
-                    type="email" 
-                    id="email" 
+                  <input
+                    type="email"
+                    id="email"
                     name="email"
                     required
                     className="w-full bg-matte border border-white/10 py-3 px-4 text-pure-white outline-none focus:border-dark-red focus:shadow-[0_0_10px_rgba(122,21,21,0.2)] transition-all"
@@ -91,8 +120,8 @@ export default function ContatoPage() {
 
                 <div>
                   <label htmlFor="message" className="block font-tech text-sm text-steel tracking-wider mb-2">MENSAGEM / DÚVIDA TÁTICA</label>
-                  <textarea 
-                    id="message" 
+                  <textarea
+                    id="message"
                     name="message"
                     rows={5}
                     required
@@ -100,8 +129,8 @@ export default function ContatoPage() {
                   ></textarea>
                 </div>
 
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   className="w-full font-subheading text-lg font-medium uppercase tracking-widest bg-dark-red text-pure-white py-4 hover:bg-[#8c1a1a] transition-all"
                 >
                   Transmitir Mensagem
