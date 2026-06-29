@@ -2,7 +2,7 @@ backend:
   name: github
   repo: johnoliveira697/zero-stop-precision
   branch: main
-  base_url: https://0stopprecision.com
+  base_url: https://www.0stopprecision.com
   auth_endpoint: api/auth
 
 media_folder: "public/assets"

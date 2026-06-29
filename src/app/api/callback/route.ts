@@ -1,11 +1,17 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const code = searchParams.get('code');
+  const state = searchParams.get('state');
+  const savedState = request.cookies.get('decap_oauth_state')?.value;
 
   if (!code) {
     return new NextResponse('No code provided', { status: 400 });
+  }
+
+  if (!state || !savedState || state !== savedState) {
+    return new NextResponse('Invalid or missing state. Possible CSRF attempt.', { status: 401 });
   }
 
   const clientId = process.env.GITHUB_CLIENT_ID;
