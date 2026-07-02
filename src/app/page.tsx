@@ -30,7 +30,7 @@ export default async function Home({
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center -z-10"
+            className="object-cover object-center"
           />
           {/* Overlay Gradients */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/90 via-[#0a0a0a]/40 to-[#0a0a0a]/80" />
@@ -158,7 +158,7 @@ export default async function Home({
             alt="Equipamento e técnica de tiro de precisão tático"
             fill
             sizes="100vw"
-            className="object-cover object-center -z-10"
+            className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/95 via-[#0a0a0a]/80 to-transparent" />
           <Container className="relative z-10">
