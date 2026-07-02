@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Send } from "lucide-react";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -89,13 +88,6 @@ export default function Footer() {
                 title="Instagram"
               >
                 <FaInstagram size={20} />
-              </a>
-              <a
-                href="mailto:contato@0stopprecision.com"
-                className="w-10 h-10 flex items-center justify-center bg-graphite border border-white/20 text-light-steel rounded-sm hover:bg-steel hover:text-pure-white hover:border-pure-white transition-all hover:-translate-y-1"
-                title="E-mail"
-              >
-                <Send size={20} />
               </a>
             </div>
           </div>
