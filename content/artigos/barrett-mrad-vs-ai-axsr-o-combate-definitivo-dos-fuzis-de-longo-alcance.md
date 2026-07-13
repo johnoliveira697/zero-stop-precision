@@ -1,7 +1,7 @@
 ---
 title: "Barrett MRAD vs AI AXSR: O Combate Definitivo dos Fuzis de Longo Alcance"
 date: 2026-06-15
-category: Fuzil de Precisão
+category: Equipamentos
 excerpt: Descubra qual é o melhor fuzil de longo alcance neste comparativo
   detalhado entre o Barrett MRAD e o AI AXSR. Análise técnica, precisão e prós e
   contras.
