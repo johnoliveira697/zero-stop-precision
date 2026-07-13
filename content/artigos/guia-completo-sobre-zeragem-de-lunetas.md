@@ -1,7 +1,7 @@
 ---
 title: Guia Completo Sobre Zeragem de Lunetas
 date: 2026-06-21
-category: Técnicas
+category: Equipamentos
 excerpt: >
   Aprenda a calibrar sua luneta passo a passo, escolher a distância ideal e
   evitar os erros que comprometem sua precisão.
