@@ -1,7 +1,7 @@
 ---
 title: Entendendo o Minuto de Ângulo (MOA)
 date: 2026-06-03
-category: Fundamentos
+category: Técnicas
 excerpt: Se você deseja melhorar sua precisão no tiro, seja ele com fuzil de
   assalto ou fuzil de precisão para engajar alvos a distâncias variadas,
   entender como fazer os ajustes corretos na sua luneta é uma habilidade
