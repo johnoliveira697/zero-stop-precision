@@ -4,10 +4,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
 import { getSortedArticlesData } from "@/lib/markdown";
-import {
-  Crosshair, TrendingUp, Binoculars, ShieldHalf,
-  Dumbbell, Helicopter, Flame, Wrench, ArrowRight, Mail, CheckCircle2
-} from "lucide-react";
+import { CATEGORIES, getCategorySlugByName } from "@/lib/categories";
+import { ArrowRight, Mail, CheckCircle2 } from "lucide-react";
 
 export default async function Home({
   searchParams,
@@ -85,24 +83,16 @@ export default async function Home({
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {[
-                { icon: Crosshair, name: "Long Range" },
-                { icon: TrendingUp, name: "Balística" },
-                { icon: Binoculars, name: "Equipamentos" },
-                { icon: ShieldHalf, name: "Técnicas" },
-                { icon: Dumbbell, name: "Treinamentos" },
-                { icon: Helicopter, name: "Operações" },
-                { icon: Flame, name: "Sobrevivência" },
-                { icon: Wrench, name: "EDC Tático" },
-              ].map((category) => (
-                <div 
-                  key={category.name}
+              {CATEGORIES.map((category) => (
+                <Link
+                  href={`/artigos/categoria/${category.slug}`}
+                  key={category.slug}
                   className="bg-lead border border-graphite p-6 md:p-10 text-center relative overflow-hidden group cursor-pointer hover:bg-graphite hover:border-steel hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-300"
                 >
                   <div className="absolute top-0 left-0 w-[2px] h-0 bg-dark-red transition-all duration-300 group-hover:h-full" />
                   <category.icon size={48} className="text-steel mx-auto mb-6 transition-all duration-300 group-hover:text-pure-white group-hover:scale-110" />
                   <h3 className="font-heading text-2xl text-cool-white">{category.name}</h3>
-                </div>
+                </Link>
               ))}
             </div>
           </Container>
@@ -130,9 +120,18 @@ export default async function Home({
                       className="object-contain"
                     />
                     <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-graphite to-transparent" />
-                    <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white uppercase">
-                      {article.category}
-                    </div>
+                    {getCategorySlugByName(article.category) ? (
+                      <Link
+                        href={`/artigos/categoria/${getCategorySlugByName(article.category)}`}
+                        className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white uppercase hover:text-dark-red hover:border-dark-red transition-colors"
+                      >
+                        {article.category}
+                      </Link>
+                    ) : (
+                      <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white uppercase">
+                        {article.category}
+                      </div>
+                    )}
                   </div>
                   <div className="p-8 flex flex-col flex-1">
                     <h3 className="font-heading text-3xl text-pure-white mb-4 transition-colors group-hover:text-dark-red">

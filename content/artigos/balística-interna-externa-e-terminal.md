@@ -141,4 +141,4 @@ Compreenderas três fases da balística, **interna, externa e terminal**,transfo
 
 Esse conhecimento é o alicerce para temas mais avançados como criação de tabelas DOPE, seleção de munição para diferentes condições, e ajuste de cargas para recarga. 
 
-Continue acompanhando o **Zero Stop Precision** para aprofundar cada um desses temas.
+Continue acompanhando o **Zero Stop Precision** para aprofundar cada um desses temas. Se você ainda não viu, comece pelo [Guia Definitivo do Tiro de Precisão](/artigos/guia-definitivo-do-tiro-de-precisao) para entender como esses conceitos se encaixam na prática, ou avance direto para o [Guia Completo Sobre Zeragem de Lunetas](/artigos/guia-completo-sobre-zeragem-de-lunetas) e comece a montar sua própria tabela DOPE.

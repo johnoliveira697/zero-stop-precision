@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getSortedArticlesData } from "@/lib/markdown";
+import { CATEGORIES } from "@/lib/categories";
 
 const BASE_URL = "https://www.0stopprecision.com";
 
@@ -11,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: article.date ? new Date(article.date) : undefined,
     changeFrequency: "monthly",
     priority: 0.7,
+  }));
+
+  const categoryEntries: MetadataRoute.Sitemap = CATEGORIES.map((category) => ({
+    url: `${BASE_URL}/artigos/categoria/${category.slug}`,
+    changeFrequency: "weekly",
+    priority: 0.8,
   }));
 
   const staticEntries: MetadataRoute.Sitemap = [
@@ -51,5 +58,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return [...staticEntries, ...articleEntries];
+  return [...staticEntries, ...categoryEntries, ...articleEntries];
 }

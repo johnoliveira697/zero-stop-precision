@@ -1,7 +1,7 @@
 ---
 title: Entendendo o Minuto de Ângulo (MOA)
 date: 2026-06-03
-category: Fundamentos
+category: Técnicas
 excerpt: Se você deseja melhorar sua precisão no tiro, seja ele com fuzil de
   assalto ou fuzil de precisão para engajar alvos a distâncias variadas,
   entender como fazer os ajustes corretos na sua luneta é uma habilidade
@@ -70,6 +70,12 @@ O conceito de MOA não serve apenas para compensar a queda do projetil, mas tamb
 
 Além disso, se você treina em um estande que só chega a 100 jardas, mas deseja que sua mira esteja zerada para caçar a 200 jardas, o MOA permite que você "burle" o sistema. Sabendo que, para o seu fuzil, você precisa subir a mira em 2 MOA para compensar a distância de 200 jardas, basta atirar no alvo de 100 jardas ajustando a luneta até que seus tiros atinjam exatamente 2 polegadas (2 MOA a 100 jardas) acima do ponto de mira. Assim, a bala estará na altura perfeita ao cruzar a marca das 200 jardas.
 
+Esse processo de calibração inicial é justamente o que chamamos de zeragem. Se você ainda não passou por esse passo, veja nosso [Guia Completo Sobre Zeragem de Lunetas](/artigos/guia-completo-sobre-zeragem-de-lunetas) antes de aplicar os ajustes de MOA no campo.
+
 ## Conclusão
 
 Ao registrar esses ajustes em um caderno de anotações (seu "data book"), os números se tornarão consistentes e você só precisará consultá-los nas próximas vezes que engajar os mesmos alvos. Leve uma fita métrica ou telêmetro laser ao estande para verificar as distâncias reais no papel, tome o seu tempo e aplique essa matemática visual simples. Entender os Minutos de Ângulo (MOA) transforma completamente o uso do seu equipamento, permitindo que o fuzil trabalhe a seu favor em qualquer distância.
+
+## Leia Também
+
+Se você atira em lunetas com retículo MRAD, veja também [Dominando os Milirradianos (Mils) no Tiro de Longa Distância](/artigos/dominando-os-milirradianos-mils-no-tiro-de-longa-distância), o sistema alternativo ao MOA. E para revisar os fundamentos completos do tiro de precisão, volte ao [Guia Definitivo do Tiro de Precisão](/artigos/guia-definitivo-do-tiro-de-precisao).

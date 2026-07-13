@@ -1,7 +1,7 @@
 ---
 title: Guia Completo Sobre Zeragem de Lunetas
 date: 2026-06-21
-category: Tiro de Precisão
+category: Técnicas
 excerpt: >
   Aprenda a calibrar sua luneta passo a passo, escolher a distância ideal e
   evitar os erros que comprometem sua precisão.
@@ -178,7 +178,7 @@ Sim, e é exatamente isso que você faz. Você zera em uma distância de referê
 
 ### MOA ou MRAD: qual é melhor para zeragem?
 
-Ambos funcionam igualmente bem. A escolha é pessoal e deve ser consistente: use luneta, alvo e calculadora no mesmo sistema. MRAD é mais popular entre atiradores táticos e militares; MOA é mais comum no mercado americano e entre caçadores. O importante é dominar o sistema que você escolheu.
+Ambos funcionam igualmente bem. A escolha é pessoal e deve ser consistente: use luneta, alvo e calculadora no mesmo sistema. MRAD é mais popular entre atiradores táticos e militares; MOA é mais comum no mercado americano e entre caçadores. O importante é dominar o sistema que você escolheu. Se precisar rever os conceitos, temos guias completos sobre [Minuto de Ângulo (MOA)](/artigos/entendendo-o-minuto-de-ângulo-moa) e sobre [Milirradianos (Mils/MRAD)](/artigos/dominando-os-milirradianos-mils-no-tiro-de-longa-distância).
 
 ### O zero muda com o desgaste do cano?
 
@@ -190,4 +190,6 @@ Sim, com o tempo o rifling se desgasta, o que pode alterar levemente a velocidad
 
 Zerar a luneta corretamente é um dos fundamentos mais importantes do tiro de precisão — e também um dos mais ignorados por iniciantes que querem pular logo para distâncias longas. Com o processo correto, apoio sólido, munição consistente e registro das informações, você estabelece uma base confiável para todo o seu sistema de tiro.
 
-A partir de um zero sólido, você pode construir sua tabela DOPE, calcular correções para vento e distância, e evoluir de forma estruturada no tiro de longa distância. Nos próximos artigos da categoria Tiro de Precisão, vamos explorar como criar uma tabela DOPE completa e como ler o vento no campo. Continue acompanhando o Zero Stop Precision.
+A partir de um zero sólido, você pode construir sua tabela DOPE, calcular correções para vento e distância, e evoluir de forma estruturada no tiro de longa distância. Nos próximos artigos sobre técnicas de tiro de precisão, vamos explorar como criar uma tabela DOPE completa e como ler o vento no campo. Continue acompanhando o Zero Stop Precision.
+
+Para entender o que acontece com o projétil antes e depois da zeragem, veja [Balística Interna, Externa e Terminal](/artigos/balística-interna-externa-e-terminal), ou volte ao [Guia Definitivo do Tiro de Precisão](/artigos/guia-definitivo-do-tiro-de-precisao) para revisar todos os fundamentos.

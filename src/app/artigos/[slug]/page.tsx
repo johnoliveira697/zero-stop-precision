@@ -1,4 +1,5 @@
 import { getArticleData, getAllArticleSlugs } from "@/lib/markdown";
+import { getCategorySlugByName } from "@/lib/categories";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
@@ -102,9 +103,18 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               {articleData.excerpt}
             </p>
             <div className="flex flex-wrap items-center gap-4">
-              <span className="bg-graphite border border-steel px-3 py-1 font-tech text-xs tracking-widest text-cool-white">
-                {articleData.category}
-              </span>
+              {getCategorySlugByName(articleData.category) ? (
+                <Link
+                  href={`/artigos/categoria/${getCategorySlugByName(articleData.category)}`}
+                  className="bg-graphite border border-steel px-3 py-1 font-tech text-xs tracking-widest text-cool-white hover:text-dark-red hover:border-dark-red transition-colors"
+                >
+                  {articleData.category}
+                </Link>
+              ) : (
+                <span className="bg-graphite border border-steel px-3 py-1 font-tech text-xs tracking-widest text-cool-white">
+                  {articleData.category}
+                </span>
+              )}
               <div className="ml-auto">
                 <ShareButton title={articleData.title} />
               </div>

@@ -1,4 +1,5 @@
 import { getSortedArticlesData } from "@/lib/markdown";
+import { CATEGORIES, getCategorySlugByName } from "@/lib/categories";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/layout/Container";
@@ -33,6 +34,19 @@ export default function ArticlesPage() {
             </p>
           </div>
 
+          <div className="flex flex-wrap justify-center gap-3 mb-16">
+            {CATEGORIES.map((category) => (
+              <Link
+                key={category.slug}
+                href={`/artigos/categoria/${category.slug}`}
+                className="inline-flex items-center gap-2 bg-lead border border-graphite px-4 py-2 font-tech text-xs tracking-widest text-cool-white uppercase hover:border-steel hover:text-pure-white transition-colors"
+              >
+                <category.icon size={14} className="text-steel" />
+                {category.name}
+              </Link>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {articles.map((article) => (
               <article key={article.slug} className="bg-graphite border border-[#2a2a2a] rounded overflow-hidden transition-all hover:border-steel hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:-translate-y-2 group flex flex-col h-full">
@@ -45,9 +59,18 @@ export default function ArticlesPage() {
                     className="object-contain"
                   />
                   <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-graphite to-transparent" />
-                  <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white uppercase">
-                    {article.category}
-                  </div>
+                  {getCategorySlugByName(article.category) ? (
+                    <Link
+                      href={`/artigos/categoria/${getCategorySlugByName(article.category)}`}
+                      className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white uppercase hover:text-dark-red hover:border-dark-red transition-colors"
+                    >
+                      {article.category}
+                    </Link>
+                  ) : (
+                    <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-steel px-4 py-1 font-tech text-xs tracking-widest text-cool-white uppercase">
+                      {article.category}
+                    </div>
+                  )}
                 </div>
                 <div className="p-8 flex flex-col flex-1">
                   <h3 className="font-heading text-3xl text-pure-white mb-4 transition-colors group-hover:text-dark-red">

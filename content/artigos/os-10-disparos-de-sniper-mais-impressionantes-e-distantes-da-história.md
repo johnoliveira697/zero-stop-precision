@@ -1,7 +1,7 @@
 ---
 title: Os 10 Disparos de Sniper Mais Impressionantes e Distantes da História
 date: 2026-06-06
-category: História
+category: Long Range
 excerpt: Descubra os 10 disparos de sniper mais impressionantes já registrados.
   Conheça as armas, atiradores de elite e a ciência por trás de tiros a mais de
   3km!
@@ -134,3 +134,5 @@ Mais do que apenas armas potentes de calibres titânicos como o .50 BMG e o .338
 **E você, qual achou ser o tiro mais impressionante? O disparo de 3,5 km do exército canadense ou o feito de Simo Häyhä utilizando apenas miras de ferro a -40°C?** 
 
 **Deixe sua resposta nos comentários abaixo! Se você gosta de conteúdo de altíssima qualidade militar e balística, inscreva-se no nosso portal e compartilhe este artigo com seus companheiros de tiro!**
+
+Quer entender a teoria por trás desses tiros históricos? Comece pelo [Guia Definitivo do Tiro de Precisão](/artigos/guia-definitivo-do-tiro-de-precisao) e conheça a formação de quem executa esse tipo de disparo em [Como Funciona o Treinamento de um Sniper Militar](/artigos/como-funciona-o-treinamento-de-um-sniper-militar).

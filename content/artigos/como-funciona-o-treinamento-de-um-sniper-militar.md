@@ -1,7 +1,7 @@
 ---
 title: Como Funciona o Treinamento de um Sniper Militar
 date: 2026-06-17
-category: Tático
+category: Treinamentos
 excerpt: >-
   Poucas especialidades dentro das Forças Armadas exigem tanto do corpo e da
   mente quanto a de sniper. No Exército Brasileiro, eles são chamados de
@@ -98,5 +98,7 @@ Exército, Marinha e Aeronáutica possuem programas próprios de formação. O E
 O treinamento de um sniper militar é um dos mais completos e exigentes dentro das Forças Armadas. Ele une precisão técnica, resistência física e controle psicológico em um único profissional. Por isso, quem conclui o processo se torna um dos ativos mais valiosos em qualquer operação militar.
 
 Nos próximos artigos, vamos falar mais sobre temas como a psicologia do atirador de elite e as técnicas avançadas de camuflagem. Continue acompanhando.
+
+Para entender a base técnica por trás dessa formação, veja o [Guia Definitivo do Tiro de Precisão](/artigos/guia-definitivo-do-tiro-de-precisao), e descubra até onde essas habilidades foram levadas nos [10 Disparos de Sniper Mais Impressionantes da História](/artigos/os-10-disparos-de-sniper-mais-impressionantes-e-distantes-da-história).
 
 *— Zero Stop Precision | 0stopprecision.com*

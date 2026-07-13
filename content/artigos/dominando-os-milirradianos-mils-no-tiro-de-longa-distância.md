@@ -1,7 +1,7 @@
 ---
 title: Dominando os Milirradianos (Mils) no Tiro de Longa Distância
 date: 2026-06-05
-category: Fundamentos
+category: Long Range
 excerpt: >-
   Para dominar o tiro de longa distância, é fundamental saber calcular a
   distância até o alvo e ajustar o impacto do seu disparo compensando a
@@ -61,3 +61,7 @@ Se você calcular que precisa compensar 1 Mil para a esquerda devido a um vento 
 Para realmente dominar este conceito, vá até um estande de tiro local com alvos de tamanhos conhecidos e uma fita métrica ou telêmetro, e comece a medir e praticar suas leituras de retículo.
 
 ![Milirradiano no Tiro de Precisão](/assets/guia_técnico_de_milirradianos_mils.png "Milirradiano no Tiro de Precisão")
+
+## Leia Também
+
+Para complementar seu domínio dos ajustes de luneta, veja também [Entendendo o Minuto de Ângulo (MOA)](/artigos/entendendo-o-minuto-de-ângulo-moa), o sistema alternativo mais popular no mercado americano, e o [Guia Completo Sobre Zeragem de Lunetas](/artigos/guia-completo-sobre-zeragem-de-lunetas) para calibrar corretamente seu equipamento antes de aplicar essas correções no campo. Se você está começando agora no tiro de precisão, volte ao [Guia Definitivo do Tiro de Precisão](/artigos/guia-definitivo-do-tiro-de-precisao).
