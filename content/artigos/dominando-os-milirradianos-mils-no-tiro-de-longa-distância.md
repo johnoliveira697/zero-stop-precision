@@ -1,7 +1,7 @@
 ---
 title: Dominando os Milirradianos (Mils) no Tiro de Longa Distância
 date: 2026-06-05
-category: Fundamentos
+category: Long Range
 excerpt: >-
   Para dominar o tiro de longa distância, é fundamental saber calcular a
   distância até o alvo e ajustar o impacto do seu disparo compensando a
