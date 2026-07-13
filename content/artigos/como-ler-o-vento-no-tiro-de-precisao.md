@@ -5,7 +5,7 @@ category: Técnicas
 excerpt: >
   O vento é a variável que mais derruba tiro de longa distância. Aprenda a ler
   bandeiras, miragem e valores de relógio para acertar mesmo com o ar mexendo.
-coverImage: /assets/leitura-vento.jpg
+coverImage: /assets/kestrel-5700a-1-.jpg
 ---
 
 <!--
