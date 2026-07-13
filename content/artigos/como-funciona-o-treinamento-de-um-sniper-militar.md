@@ -1,7 +1,7 @@
 ---
 title: Como Funciona o Treinamento de um Sniper Militar
 date: 2026-06-17
-category: Tático
+category: Treinamentos
 excerpt: >-
   Poucas especialidades dentro das Forças Armadas exigem tanto do corpo e da
   mente quanto a de sniper. No Exército Brasileiro, eles são chamados de
