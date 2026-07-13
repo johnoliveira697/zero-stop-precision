@@ -2,7 +2,7 @@
 title: "O Guia Definitivo do Tiro de Precisão: Fundamentos, Equipamentos e Como
   Começar do Zero"
 date: 2026-05-29
-category: Fundamentos
+category: Técnicas
 excerpt: Descubra o que é o tiro de precisão, domine os fundamentos essenciais e
   compare os melhores armamentos, do calibre .22 LR ao fuzil .308.
 coverImage: /assets/Tiro de precisão.jpg
