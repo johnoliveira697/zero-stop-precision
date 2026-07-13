@@ -163,6 +163,8 @@ coverImage: /assets/Tiro de precisão.jpg
 <li><a href="/artigos/barrett-mrad-vs-ai-axsr-o-combate-definitivo-dos-fuzis-de-longo-alcance">Barrett MRAD vs AI AXSR</a> — o comparativo definitivo dos fuzis de longo alcance premium.</li>
 <li><a href="/artigos/como-funciona-o-treinamento-de-um-sniper-militar">Como Funciona o Treinamento de um Sniper Militar</a> — a formação por trás dos atiradores de elite.</li>
 <li><a href="/artigos/os-10-disparos-de-sniper-mais-impressionantes-e-distantes-da-história">Os 10 Disparos de Sniper Mais Impressionantes da História</a> — a teoria aplicada nos tiros mais extremos já registrados.</li>
+<li><a href="/artigos/como-ler-o-vento-no-tiro-de-precisao">Como Ler o Vento no Tiro de Precisão</a> — o método do relógio, leitura de miragem e como converter tudo em cliques ou hold.</li>
+<li><a href="/artigos/condições-climáticas-no-tiro-de-precisão-como-o-clima-afeta-cada-disparo">Condições Climáticas no Tiro de Precisão</a> — como temperatura, pressão, umidade e densidade do ar mudam cada disparo.</li>
 </ul>
 
 <h3>Gostou do conteúdo?</h3>

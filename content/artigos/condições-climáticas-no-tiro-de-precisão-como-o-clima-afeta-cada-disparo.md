@@ -103,7 +103,7 @@ O vento raramente sopra perfeitamente perpendicular, então usamos o método do 
 
 ### Lendo o vento no campo
 
-Sem anemômetro plantado no alvo, sobra ler os indicadores naturais:
+Sem anemômetro plantado no alvo, sobra ler os indicadores naturais (guia completo em [Como Ler o Vento no Tiro de Precisão](/artigos/como-ler-o-vento-no-tiro-de-precisao)):
 
 **Vegetação:** grama e folhas começam a mexer com uns 5 km/h. Galhos pequenos, com uns 15 km/h. Árvore inteira balançando é vento de 30 km/h ou mais.
 
@@ -176,7 +176,11 @@ O clima não é inimigo do tiro de precisão. É parte da equação. O atirador 
 
 A hierarquia é clara: domine primeiro a leitura de vento, depois temperatura e densidade do ar. Com um caderno DOPE bem alimentado e medições consistentes, acertar em condição adversa deixa de ser sorte e vira método.
 
-Nos próximos artigos vou aprofundar a leitura de vento no campo e a criação de tabelas DOPE por densidade altitude. Continue acompanhando o Zero Stop Precision.
+Já publicamos o aprofundamento completo sobre [Como Ler o Vento no Tiro de Precisão](/artigos/como-ler-o-vento-no-tiro-de-precisao); o próximo passo é a criação de tabelas DOPE por densidade altitude. Continue acompanhando o Zero Stop Precision.
+
+## Leia Também
+
+Para entender as três fases da balística por trás de cada uma dessas variáveis, veja [Balística Interna, Externa e Terminal](/artigos/balística-interna-externa-e-terminal). Se você ainda não passou pelos fundamentos, comece pelo [Guia Definitivo do Tiro de Precisão](/artigos/guia-definitivo-do-tiro-de-precisao).
 
 ---
 

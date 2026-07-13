@@ -190,6 +190,6 @@ Sim, com o tempo o rifling se desgasta, o que pode alterar levemente a velocidad
 
 Zerar a luneta corretamente é um dos fundamentos mais importantes do tiro de precisão — e também um dos mais ignorados por iniciantes que querem pular logo para distâncias longas. Com o processo correto, apoio sólido, munição consistente e registro das informações, você estabelece uma base confiável para todo o seu sistema de tiro.
 
-A partir de um zero sólido, você pode construir sua tabela DOPE, calcular correções para vento e distância, e evoluir de forma estruturada no tiro de longa distância. Nos próximos artigos sobre técnicas de tiro de precisão, vamos explorar como criar uma tabela DOPE completa e como ler o vento no campo. Continue acompanhando o Zero Stop Precision.
+A partir de um zero sólido, você pode construir sua tabela DOPE, calcular correções para vento e distância, e evoluir de forma estruturada no tiro de longa distância. Já publicamos o guia de [Como Ler o Vento no Tiro de Precisão](/artigos/como-ler-o-vento-no-tiro-de-precisao); o próximo passo é uma tabela DOPE completa do zero. Continue acompanhando o Zero Stop Precision.
 
 Para entender o que acontece com o projétil antes e depois da zeragem, veja [Balística Interna, Externa e Terminal](/artigos/balística-interna-externa-e-terminal), ou volte ao [Guia Definitivo do Tiro de Precisão](/artigos/guia-definitivo-do-tiro-de-precisao) para revisar todos os fundamentos.

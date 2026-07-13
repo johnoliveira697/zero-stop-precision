@@ -51,7 +51,7 @@ Os Mils também podem ser usados de forma similar aos Minutos de Ângulo (MOA) p
 
 Em vez de perder tempo ajustando as torres da luneta (já que o vento pode mudar rapidamente), você pode usar os próprios pontos do retículo para fazer correções rápidas ("holdovers"). Para facilitar a conversão mental no campo, **pode-se considerar que 1 Mil equivale a aproximadamente 3,5 MOA**.
 
-Se você calcular que precisa compensar 1 Mil para a esquerda devido a um vento soprando da esquerda para a direita, basta alinhar o alvo com o primeiro ponto Mil localizado à direita do centro do seu retículo. A regra é simples: pergunte-se "para qual lado estou compensando e o quão longe?" e mova seu retículo nessa direção específica antes de atirar.
+Se você calcular que precisa compensar 1 Mil para a esquerda devido a um vento soprando da esquerda para a direita, basta alinhar o alvo com o primeiro ponto Mil localizado à direita do centro do seu retículo. A regra é simples: pergunte-se "para qual lado estou compensando e o quão longe?" e mova seu retículo nessa direção específica antes de atirar. Para aprender a estimar esse valor de vento antes de fazer a conta, veja [Como Ler o Vento no Tiro de Precisão](/artigos/como-ler-o-vento-no-tiro-de-precisao).
 
 ## Dicas Finais
 

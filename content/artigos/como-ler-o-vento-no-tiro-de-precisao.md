@@ -28,9 +28,9 @@ Neste guia eu vou destrinchar como o vento age sobre o projétil, como estimar v
 
 O projétil sai supersônico e vai desacelerando o tempo todo. Quanto mais tempo ele passa no ar, mais o vento tem chance de empurrá-lo para o lado. Por isso o desvio de vento não cresce de forma linear com a distância, ele cresce de forma acelerada. Dobrar a distância mais que dobra o desvio.
 
-Um detalhe que confunde iniciante: não é a força do vento batendo na lateral da bala que faz o estrago principal. O que pesa mesmo é o **tempo de voo**. Projéteis lentos, leves ou com formato ruim ficam mais tempo expostos e sofrem mais. É aqui que entra o coeficiente balístico, que mede o quão bem a bala corta o ar e resiste à desaceleração [link: O Que é Coeficiente Balístico (BC)].
+Um detalhe que confunde iniciante: não é a força do vento batendo na lateral da bala que faz o estrago principal. O que pesa mesmo é o **tempo de voo**. Projéteis lentos, leves ou com formato ruim ficam mais tempo expostos e sofrem mais. É aqui que entra o [coeficiente balístico](/artigos/balística-interna-externa-e-terminal), que mede o quão bem a bala corta o ar e resiste à desaceleração.
 
-Duas balas saindo na mesma velocidade, uma com BC alto e outra com BC baixo, vão derivar de formas bem diferentes no mesmo vento. A de BC alto chega mais rápido, passa menos tempo no ar e é empurrada menos. Essa é uma das razões pelas quais cartuchos como o 6.5 Creedmoor ganharam fama em longa distância [link: .308 Winchester vs 6.5 Creedmoor].
+Duas balas saindo na mesma velocidade, uma com BC alto e outra com BC baixo, vão derivar de formas bem diferentes no mesmo vento. A de BC alto chega mais rápido, passa menos tempo no ar e é empurrada menos. Essa é uma das razões pelas quais cartuchos como o 6.5 Creedmoor ganharam fama em longa distância.
 
 > 📌 **Conceito-chave:** o desvio de vento é proporcional ao atraso do projétil, ou seja, à diferença entre o tempo real de voo e o tempo que ele levaria no vácuo. Mais tempo no ar, mais desvio. É por isso que reduzir o tempo de voo (velocidade e BC) importa tanto quanto ler o vento.
 
@@ -81,7 +81,7 @@ O procedimento fica assim: primeiro você estima a velocidade do vento pelos sin
 
 Vento de frente (12 horas) e de cauda (6 horas) não desviam o tiro lateralmente de forma relevante, mas não são inofensivos. Eles mexem levemente na elevação. Vento de cauda "ajuda" o projétil e o faz cair um pouco menos, enquanto vento de frente aumenta um pouco a queda.
 
-Em distâncias curtas isso é irrelevante. Em longa distância, com vento forte de frente ou de cauda, esse efeito começa a aparecer no papel. Não é o seu maior problema, mas é bom saber que existe para não coçar a cabeça quando o grupo subir ou descer sem motivo aparente. Anote esse comportamento na sua tabela DOPE conforme for observando [link: Como Criar uma Tabela DOPE Completa do Zero].
+Em distâncias curtas isso é irrelevante. Em longa distância, com vento forte de frente ou de cauda, esse efeito começa a aparecer no papel. Não é o seu maior problema, mas é bom saber que existe para não coçar a cabeça quando o grupo subir ou descer sem motivo aparente. Anote esse comportamento na sua [tabela DOPE](/artigos/guia-completo-sobre-zeragem-de-lunetas) conforme for observando.
 
 ## Leitura de miragem: o instrumento que já está no seu retículo
 
@@ -102,13 +102,13 @@ Uma observação honesta: ler miragem bem leva tempo de banco. Não espere domin
 
 ## Transformando a leitura em cliques ou hold
 
-Ler o vento não vale nada se você não souber converter aquilo em correção. Existem dois caminhos, e o bom atirador usa os dois conforme a situação [link: Holdover vs Ajuste de Torre].
+Ler o vento não vale nada se você não souber converter aquilo em correção. Existem dois caminhos, e o bom atirador usa os dois conforme a situação — o hold via retículo funciona do mesmo jeito que os holdovers explicados em [Dominando os Milirradianos (Mils)](/artigos/dominando-os-milirradianos-mils-no-tiro-de-longa-distância).
 
 O primeiro é ajustar a **torre de deriva** (windage) da luneta, girando os cliques em MIL ou MOA para o lado de onde o vento vem, de modo que o retículo volte ao centro do alvo. Preciso e repetível, ideal quando o vento está estável e você tem tempo.
 
 O segundo é o **hold**, ou seja, deslocar o ponto de mira usando as marcações do retículo, mantendo a torre parada. Rápido e reversível, perfeito para vento que muda rápido ou tiro que exige velocidade. Você simplesmente mira "no vento", usando as gradações do retículo como régua.
 
-Para chegar ao valor exato de MIL ou MOA você depende da sua tabela balística, aquela que você construiu com o seu rifle, seu calibre e sua munição. Existe uma fórmula rápida bastante usada que estima a deriva combinando distância e velocidade do vento dividida por uma constante que depende do cartucho. O ponto importante: essa constante muda de calibre para calibre e de carga para carga, então não saia usando número de vídeo da internet. O único número em que você deve confiar é o que sai da sua própria DOPE, validada no papel [link: Como Criar uma Tabela DOPE Completa do Zero].
+Para chegar ao valor exato de MIL ou MOA você depende da sua tabela balística, aquela que você construiu com o seu rifle, seu calibre e sua munição. Existe uma fórmula rápida bastante usada que estima a deriva combinando distância e velocidade do vento dividida por uma constante que depende do cartucho. O ponto importante: essa constante muda de calibre para calibre e de carga para carga, então não saia usando número de vídeo da internet. O único número em que você deve confiar é o que sai da sua própria [tabela DOPE](/artigos/guia-completo-sobre-zeragem-de-lunetas), validada no papel.
 
 > 📌 **Conceito-chave:** primeiro leia o vento (velocidade e valor de relógio), depois consulte a solução do seu sistema (tabela ou app), e por fim aplique via torre ou hold. Ler certo e aplicar com número errado dá o mesmo resultado que ler errado: tiro fora.
 
@@ -155,4 +155,8 @@ Ler vento é a habilidade que mais diferencia atiradores de longa distância, e 
 
 O caminho é sempre o mesmo. Leia o vento (velocidade e valor), converta com a solução do seu próprio sistema, aplique via torre ou hold e registre o resultado. Esse registro é o que fecha o ciclo, porque cada disparo vira um dado que refina a sua tabela e afia a sua leitura para a próxima sessão.
 
-E é exatamente sobre esse registro que fala o próximo artigo do blog: como construir uma tabela DOPE completa do zero, transformando os seus dados de campo (inclusive os de vento) na ferramenta que resolve a elevação e a deriva antes mesmo de você chegar na linha de tiro [link: Como Criar uma Tabela DOPE Completa do Zero].
+E é exatamente sobre esse registro que fala o próximo artigo do blog: como construir uma tabela DOPE completa do zero, transformando os seus dados de campo (inclusive os de vento) na ferramenta que resolve a elevação e a deriva antes mesmo de você chegar na linha de tiro.
+
+## Leia Também
+
+Para entender o que acontece com o projétil antes do vento entrar em ação, veja [Balística Interna, Externa e Terminal](/artigos/balística-interna-externa-e-terminal). Vento é só uma das variáveis ambientais — veja como temperatura, pressão e umidade também mudam seu disparo em [Condições Climáticas no Tiro de Precisão](/artigos/condições-climáticas-no-tiro-de-precisão-como-o-clima-afeta-cada-disparo). Para dominar os ajustes de retículo usados nos holds citados aqui, confira [Dominando os Milirradianos (Mils) no Tiro de Longa Distância](/artigos/dominando-os-milirradianos-mils-no-tiro-de-longa-distância). E se você ainda não passou pelos fundamentos, comece pelo [Guia Definitivo do Tiro de Precisão](/artigos/guia-definitivo-do-tiro-de-precisao).

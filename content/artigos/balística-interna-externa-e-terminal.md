@@ -66,7 +66,7 @@ O ar oferece resistência ao projétil — chamada de Drag. Projéteis mais aero
 
 O vento é o fator mais difícil de compensar no tiro de longa distância porque é variável e imprevisível. Um vento cruzado de apenas 10 mph (16 km/h) pode desviar um projétil .308 mais de 30 cm a 500m, o suficiente para errar completamente um alvo.
 
-Atiradores experientes aprendem a ler o vento pela observação de vegetação, reverberação (ondas de calor visíveis na luneta), e bandeiras. A compensação é feita ajustando apontaria horizontalmente (windage).
+Atiradores experientes aprendem a ler o vento pela observação de vegetação, reverberação (ondas de calor visíveis na luneta), e bandeiras. A compensação é feita ajustando apontaria horizontalmente (windage). Veja o guia completo em [Como Ler o Vento no Tiro de Precisão](/artigos/como-ler-o-vento-no-tiro-de-precisao), e como temperatura, pressão e umidade também entram nessa conta em [Condições Climáticas no Tiro de Precisão](/artigos/condições-climáticas-no-tiro-de-precisão-como-o-clima-afeta-cada-disparo).
 
 ### Efeitos de longa distância: Spin Drift e Coriolis
 
