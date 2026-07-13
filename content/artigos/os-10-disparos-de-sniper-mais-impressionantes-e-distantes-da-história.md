@@ -1,7 +1,7 @@
 ---
 title: Os 10 Disparos de Sniper Mais Impressionantes e Distantes da História
 date: 2026-06-06
-category: História
+category: Long Range
 excerpt: Descubra os 10 disparos de sniper mais impressionantes já registrados.
   Conheça as armas, atiradores de elite e a ciência por trás de tiros a mais de
   3km!
