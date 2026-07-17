@@ -12,7 +12,7 @@ Legenda: [FEITO] concluído e publicado no repositório | [ ] pendente
 | 2 | [FEITO] | Como Criar uma Tabela DOPE Completa do Zero | Long Range | 2026-07-14 | como-criar-uma-tabela-dope-completa-do-zero |
 | 3 | [FEITO] | Holdover vs Ajuste de Torre: Quando Usar Cada Técnica | Técnicas | 2026-07-16 | holdover-vs-ajuste-de-torre-quando-usar-cada-tecnica |
 | 4 | [FEITO] | O Que é Coeficiente Balístico (BC) e Como Usar a Seu Favor | Balística | 2026-07-16 | o-que-e-coeficiente-balistico-bc-e-como-usar-a-seu-favor |
-| 5 | [ ] | Spotter e Sniper: A Anatomia da Dupla Perfeita | Operações | | |
+| 5 | [FEITO] | Spotter e Sniper: A Anatomia da Dupla Perfeita | Operações | 2026-07-17 | spotter-e-sniper-a-anatomia-da-dupla-perfeita |
 | 6 | [ ] | Como Funciona um Hide de Sniper | Sobrevivência | | |
 | 7 | [ ] | Ghillie Suit: A Ciência da Camuflagem de Sniper | Operações | | |
 | 8 | [ ] | Técnicas de Sobrevivência para Operações em Mata | Sobrevivência | | |
@@ -26,7 +26,7 @@ Legenda: [FEITO] concluído e publicado no repositório | [ ] pendente
 | 16 | [ ] | Quanto Custa Montar um Setup de Precisão em 2026? | Equipamentos | | |
 
 ## Próximo a ser escrito
-Item 5: Spotter e Sniper: A Anatomia da Dupla Perfeita (Categoria: Operações)
+Item 6: Como Funciona um Hide de Sniper (Categoria: Sobrevivência)
 
 ## Artigos extras já no repositório (fora da fila original)
 Existem outros artigos publicados que não fazem parte desta fila de 16 temas, por

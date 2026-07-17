@@ -39,8 +39,6 @@ O nono lugar é ocupado por um *sniper* da África do Sul que teve seu nome pres
 * **Armamento**: O atirador utilizou um raríssimo e poderoso fuzil antimaterial Denel NTW-14.5.
 * **Munição**: Diferente do padrão .50, ele usou um gigantesco calibre 14.5x114mm.
 
-![Fuzil Denel NTW](/assets/denel-ntw-20-02.jpg "Fuzil Denel NTW")
-
 **8. A Lenda Americana: Carlos Hathcock (2.286 metros)**
 
 Embora as listas tradicionais foquem em fuzis de precisão, Carlos Hathcock realizou um feito absurdo na Guerra do Vietnã, em fevereiro de1967. Ele alcançou um abate confirmado a 2.286 metros.
