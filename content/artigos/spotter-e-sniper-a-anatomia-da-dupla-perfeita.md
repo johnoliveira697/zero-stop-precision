@@ -6,7 +6,7 @@ excerpt: >
   O tiro sai do cano do sniper, mas a maior parte do trabalho é do spotter.
   Entenda como a dupla divide funções, se comunica e transforma dois atiradores
   em um sistema de armas único.
-coverImage: /assets/spotter-sniper.jpg
+coverImage: /assets/sniper-and-sppoter.jpg
 ---
 
 <!--
