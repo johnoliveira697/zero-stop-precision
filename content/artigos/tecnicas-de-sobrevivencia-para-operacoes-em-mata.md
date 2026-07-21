@@ -1,12 +1,12 @@
 ---
-title: "Técnicas de Sobrevivência para Operações em Mata"
+title: Técnicas de Sobrevivência para Operações em Mata
 date: 2026-07-20
 category: Sobrevivência
 excerpt: >
   Na mata, o clima, o terreno e o próprio corpo do operador viram inimigos antes
   do adversário aparecer. Este é o guia de campo para se manter vivo, seco e
   invisível quando a operação se estende por dias.
-coverImage: /assets/sobrevivencia-mata.jpg
+coverImage: /assets/323279-1-.jpg
 ---
 
 <!--
