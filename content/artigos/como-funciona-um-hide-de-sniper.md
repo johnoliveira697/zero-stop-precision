@@ -1,12 +1,12 @@
 ---
-title: "Como Funciona um Hide de Sniper"
+title: Como Funciona um Hide de Sniper
 date: 2026-07-17
 category: Sobrevivência
 excerpt: >
   O hide é o casulo onde o atirador vive, observa e some da paisagem. Entenda
   como escolher o local, montar a posição, disciplinar a rotina e sair sem
   deixar rastro.
-coverImage: /assets/hide-sniper.jpg
+coverImage: /assets/024ffe655c9bf84273fe9a5e72c84071-1-.jpg
 ---
 
 <!--
