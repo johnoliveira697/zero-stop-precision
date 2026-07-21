@@ -6,7 +6,7 @@ excerpt: >
   A ghillie suit não te deixa invisível, ela quebra o que o olho humano procura.
   Entenda a ciência por trás da camuflagem de sniper, os materiais certos, os
   erros que entregam o atirador e como montar a sua sem cair em armadilha.
-coverImage: /assets/ghillie-suit.jpg
+coverImage: /assets/soldier-4761263_960_720-1-.jpg
 ---
 
 <!--
