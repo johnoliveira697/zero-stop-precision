@@ -8,7 +8,6 @@ excerpt: >
   deixar rastro.
 coverImage: /assets/024ffe655c9bf84273fe9a5e72c84071-1-.jpg
 ---
-
 <!--
 Categoria: Sobrevivência
 Palavra-chave principal: hide de sniper
@@ -43,18 +42,18 @@ Uma moita te dá ocultamento e zero cobertura. Se o inimigo desconfiar e varrer 
 
 Nem todo hide é uma obra de engenharia. O tipo certo depende do tempo disponível, do terreno e do tempo de permanência esperado.
 
-| Tipo de hide | Tempo de montagem | Permanência típica | Quando usar |
-|---|---|---|---|
-| Improvisado (hasty) | Minutos | Horas | Contato iminente, sem tempo, aproveita o que o terreno oferece |
-| Deliberado (expedient) | Uma a poucas horas | Um dia ou uma noite | Missão de duração média, algum tempo para preparar |
-| Construído (purpose-built) | Muitas horas ou dias | Dias a semanas | Vigilância prolongada, escavação, estrutura reforçada e camuflada |
-| Urbano | Variável | Variável | Dentro de edificação, cômodo recuado, tiro por vão ou fresta |
+| Tipo de hide               | Tempo de montagem    | Permanência típica  | Quando usar                                                       |
+| -------------------------- | -------------------- | ------------------- | ----------------------------------------------------------------- |
+| Improvisado (hasty)        | Minutos              | Horas               | Contato iminente, sem tempo, aproveita o que o terreno oferece    |
+| Deliberado (expedient)     | Uma a poucas horas   | Um dia ou uma noite | Missão de duração média, algum tempo para preparar                |
+| Construído (purpose-built) | Muitas horas ou dias | Dias a semanas      | Vigilância prolongada, escavação, estrutura reforçada e camuflada |
+| Urbano                     | Variável             | Variável            | Dentro de edificação, cômodo recuado, tiro por vão ou fresta      |
 
 O hide improvisado é o que você monta quando o relógio não deixa escolha. Aproveita uma depressão do terreno, a base de uma árvore caída, uma dobra de relevo, e ajusta a folhagem por cima. Some rápido, mas protege pouco.
 
 O deliberado já permite trabalho. Você recorta a vegetação com critério, prepara a fresta de tiro, arruma o apoio do fuzil, organiza a área de descanso. É o feijão com arroz da maioria das missões de duração média.
 
-O construído é o extremo do ofício. Envolve escavação, remoção discreta da terra retirada (que não pode virar um monte denunciando o buraco), estrutura de sustentação, telhado camuflado e uma fresta de tiro trabalhada para não vazar luz nem sombra. É onde a paciência vira arma. Para entender a construção da posição de tiro em si, o apoio e a estabilidade, vale cruzar com [link: Bipés, Bags e Apoios].
+O construído é o extremo do ofício. Envolve escavação, remoção discreta da terra retirada (que não pode virar um monte denunciando o buraco), estrutura de sustentação, telhado camuflado e uma fresta de tiro trabalhada para não vazar luz nem sombra. É onde a paciência vira arma. Para entender a construção da posição de tiro em si, o apoio e a estabilidade, vale cruzar com \[link: Bipés, Bags e Apoios].
 
 O urbano segue outra lógica, e eu volto nele mais para frente.
 
@@ -90,7 +89,7 @@ Alguns cuidados que fazem diferença:
 
 **Fresta falsa e disciplina de uso.** Em posições prolongadas, alguns operadores mantêm a fresta fechada por uma tela ou véu ralo, que dá para enxergar através sem revelar o buraco, e só abrem no momento do disparo. Quanto menos tempo a fresta fica escancarada, melhor.
 
-**Apoio interno.** Dentro do hide, o fuzil precisa de um apoio estável e baixo. Bipé, saco de apoio, mochila, o que o local permitir. Um tiro de dentro de uma toca costuma ser feito de posições nada convencionais, e a estabilidade do apoio compensa. Se você ainda está firmando os fundamentos de posição e apoio, o [link: Guia Definitivo do Tiro de Precisão] cobre a base.
+**Apoio interno.** Dentro do hide, o fuzil precisa de um apoio estável e baixo. Bipé, saco de apoio, mochila, o que o local permitir. Um tiro de dentro de uma toca costuma ser feito de posições nada convencionais, e a estabilidade do apoio compensa. Se você ainda está firmando os fundamentos de posição e apoio, o \[link: Guia Definitivo do Tiro de Precisão] cobre a base.
 
 ## Disciplina de permanência: o inimigo invisível é o tédio
 
@@ -102,7 +101,7 @@ A permanência tem regras que parecem exageradas até você entender por que exi
 
 **Rotina de turnos.** Numa dupla, um observa enquanto o outro descansa, come ou anota. Ninguém aguenta observar com atenção total por horas seguidas. A fadiga visual faz você começar a "ver" coisas que não existem e deixar de ver o que importa. O rodízio mantém pelo menos um par de olhos afiado o tempo todo.
 
-**Registro contínuo.** O hide não serve só para atirar. Na maioria das missões ele é primariamente um posto de observação. A dupla monta um log, o registro de tudo que passa: horários, padrões de tráfego, número de pessoas, rotinas do alvo. Esse caderno vale tanto quanto o tiro, e alimenta a tabela de dados do atirador. Sobre organizar dados de tiro, veja [link: Como Criar uma Tabela DOPE Completa do Zero].
+**Registro contínuo.** O hide não serve só para atirar. Na maioria das missões ele é primariamente um posto de observação. A dupla monta um log, o registro de tudo que passa: horários, padrões de tráfego, número de pessoas, rotinas do alvo. Esse caderno vale tanto quanto o tiro, e alimenta a tabela de dados do atirador. Sobre organizar dados de tiro, veja \[link: Como Criar uma Tabela DOPE Completa do Zero].
 
 **Higiene de campo.** Não tem eufemismo bonito para isso. Numa toca ocupada por dias, tudo que entra tem que sair, incluindo dejetos, embalados e retirados. Nada de cavar e enterrar do lado, porque terra revirada e cheiro são assinatura. Comida fria, sem fogo, sem cheiro de cozinha. O olfato humano é fraco, mas o de um cão não é, e fumaça sobe.
 
@@ -112,20 +111,20 @@ A permanência tem regras que parecem exageradas até você entender por que exi
 
 A doutrina de camuflagem organiza os fatores de detecção numa lista que todo operador decora. Em inglês são os "eses" da camuflagem. Traduzidos, são os oito jeitos de você aparecer sem querer. Trabalhar o hide é, basicamente, zerar cada um deles.
 
-| Sinal | O que denuncia | Como controlar no hide |
-|---|---|---|
-| Forma (shape) | O contorno reconhecível de pessoa, capacete, cano | Quebrar a silhueta com folhagem e material irregular |
-| Brilho (shine) | Reflexo de lente, pele suada, metal, relógio | Fosquear tudo, usar véus na luneta, camuflar a pele |
-| Sombra (shadow) | A sombra projetada do corpo ou do equipamento | Ficar dentro da sombra existente, nunca projetar uma nova |
-| Silhueta (silhouette) | Contorno recortado contra o céu ou fundo claro | Ter sempre fundo escuro atrás, sair da linha de cumeada |
-| Superfície e cor (surface) | Textura ou cor que destoa do ambiente | Casar cor e textura com o terreno local, não com o genérico |
-| Movimento (movement) | Qualquer gesto, o mais fácil de detectar | Movimento lento, mínimo e raro |
-| Espaçamento (spacing) | Padrões regulares, distâncias iguais, geometria | Distribuir de forma irregular, a natureza não é simétrica |
-| Som e cheiro (sound/smell) | Ruído, fumaça, comida, desodorante, cigarro | Silêncio, comida sem cheiro, nada de perfume ou fumo |
+| Sinal                      | O que denuncia                                    | Como controlar no hide                                      |
+| -------------------------- | ------------------------------------------------- | ----------------------------------------------------------- |
+| Forma (shape)              | O contorno reconhecível de pessoa, capacete, cano | Quebrar a silhueta com folhagem e material irregular        |
+| Brilho (shine)             | Reflexo de lente, pele suada, metal, relógio      | Fosquear tudo, usar véus na luneta, camuflar a pele         |
+| Sombra (shadow)            | A sombra projetada do corpo ou do equipamento     | Ficar dentro da sombra existente, nunca projetar uma nova   |
+| Silhueta (silhouette)      | Contorno recortado contra o céu ou fundo claro    | Ter sempre fundo escuro atrás, sair da linha de cumeada     |
+| Superfície e cor (surface) | Textura ou cor que destoa do ambiente             | Casar cor e textura com o terreno local, não com o genérico |
+| Movimento (movement)       | Qualquer gesto, o mais fácil de detectar          | Movimento lento, mínimo e raro                              |
+| Espaçamento (spacing)      | Padrões regulares, distâncias iguais, geometria   | Distribuir de forma irregular, a natureza não é simétrica   |
+| Som e cheiro (sound/smell) | Ruído, fumaça, comida, desodorante, cigarro       | Silêncio, comida sem cheiro, nada de perfume ou fumo        |
 
 Essa tabela não é decoração. É a checklist que a dupla roda mentalmente antes de considerar o hide pronto. Cada linha é uma pergunta: "estou entregando isso?". Se a resposta for sim em qualquer uma, tem trabalho a fazer.
 
-A camuflagem pessoal, que ataca vários desses sinais de uma vez, merece um capítulo próprio, e é justamente o que vem no [link: Ghillie Suit: A Ciência da Camuflagem de Sniper].
+A camuflagem pessoal, que ataca vários desses sinais de uma vez, merece um capítulo próprio, e é justamente o que vem no \[link: Ghillie Suit: A Ciência da Camuflagem de Sniper].
 
 ## Hide urbano: mesma lógica, ambiente diferente
 
@@ -164,4 +163,4 @@ O movimento, disparado. O olho humano detecta movimento antes de qualquer outra 
 
 Um hide não é onde o sniper se esconde. É como ele deixa de existir para o inimigo enquanto continua vendo tudo. Escolha de terreno, cobertura contra ocultamento, a fresta trabalhada de dentro para fora, a disciplina brutal de permanência e a saída limpa sem assinatura. Junte tudo isso e você entende por que o ofício é chamado de campo de invisibilidade, não de pontaria.
 
-E se o hide é a casa, a camuflagem que você veste é a pele. Ela ataca de uma vez a forma, o brilho, a superfície e o movimento, e é a peça mais mitológica e mais mal compreendida do equipamento de um atirador. No próximo artigo eu vou desmontar a ciência por trás dela: como um ghillie suit realmente funciona, por que ele engana o olho humano e como se constrói um que não pareça uma fantasia. Fica ligado no [link: Ghillie Suit: A Ciência da Camuflagem de Sniper].
+E se o hide é a casa, a camuflagem que você veste é a pele. Ela ataca de uma vez a forma, o brilho, a superfície e o movimento, e é a peça mais mitológica e mais mal compreendida do equipamento de um atirador. No próximo artigo eu vou desmontar a ciência por trás dela: como um ghillie suit realmente funciona, por que ele engana o olho humano e como se constrói um que não pareça uma fantasia. Fica ligado no [[Ghillie Suit: A Ciência da Camuflagem de Sniper](https://www.0stopprecision.com/artigos/ghillie-suit-a-ciencia-da-camuflagem-de-sniper)].
