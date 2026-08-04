@@ -5,6 +5,7 @@ category: Equipamentos
 excerpt: Grupo aberto quase nunca é culpa do cano. Na maioria das vezes é a
   plataforma que sustenta o rifle. Este guia mostra o que bipé, bag e apoios
   fazem de verdade e como montá-los para não brigar com o próprio equipamento.
+coverImage: /assets/chatgpt-image-4-de-ago.-de-2026-19_23_55.png
 ---
 # Bipés, Bags e Apoios: O Que Realmente Estabiliza Seu Tiro
 
